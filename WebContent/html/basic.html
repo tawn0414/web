@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="EUC-KR">
+		<title>기본 html연습</title>
+	</head>
+	<body>
+		<!--html주석(클라이언트에 전송되는 주석이므로 주의하기!)성민재-->
+		안녕하세요&lt;<br/>
+		<b><i>성민재</i></b>&nbsp;&nbsp;&nbsp;입니다.
+		<hr/>
+		<hr/>
+		<pre>
+			안녕하세요
+			성민재입니다.
+			지금은                html연습중.
+		</pre>
+		<p>지금은 html의 기본을 연습하는 시간입니다.</p>
+		<h1>HTM1연습중....</h1>
+		<h2>HTM1연습중....</h2>
+		<h3>HTM1연습중....</h3>
+		<h4>HTM1연습중....</h4>
+		<h5>HTM1연습중....</h5>
+		<h6>HTM1연습중....</h6>
+		<h7>HTM1연습중....</h7><!-- 얘는 없으니까 실행시키면 걍 원래 글자 크기로 돌아옴. -->
+		<font size="1" color="red" face="굴림">HTML연습중....</font><!-- 본문의 글자를 나타날때 사용하는 태그. -->
+		<font size="2" color="green" face="HY 견고딕">HTML연습중....</font>
+		<font size="3" color="blue" face="궁서">HTML연습중....</font>
+		<font size="4" color="skyblue" face="굴림">HTML연습중....</font>
+		<font size="5" color="yellow" face="굴림">HTML연습중....</font>
+		<font size="6" color="#86E57F" face="굴림">HTML연습중....</font><!-- color에 있는 숫자는 네이버에 생상표 치고들어가서 원하는 색 코드를 복붙한것. -->
+			<!-- 근데 위처럼 글자 사이즈, 색, 글꼴 변경 등은 html에서 안할꺼임. -->
+		<h3>상대경로로 이미지 삽입하기</h3><!-- 책 37p, 경로가 파일의 위치에 따라서 바뀜 -->
+		<img src="jang1.jpg"/><!-- 이건 현재 basic.html이 있는 폴더에서 jang1.jpg를 찾는것. 없으니까 당연히 출력안됨. -->
+		<img src="../images/jang1.jpg"/><!-- 상위로가서 image로가서 jang1.jpg를 찾아라 -->
+		<img src="../images/jang1.jpg" width="200" height="300" border="1" alt="멋진 장동건"/>
+		<br/>
+		<br/>
+		<br/>
+		<h3>절대경로로 이미지를 삽입하기</h3><!-- 늘 고정되어 있는 경로. -->
+		<img src ="http://127.0.0.1:8088/clientweb/images/jang1.jpg" width="200" height="300"/>
+		<img src ="/clientweb/images/jang1.jpg" width="200" height="300"/>
+	</body>
+</html>

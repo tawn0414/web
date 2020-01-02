@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>양식태그 테스트하기</h1>
+	<form action="/clientweb/member/login.jsp" method="get"><!-- method:요청하는 방식이 어떤 것인가.get: 요청메시지 헤더에 입력한 데이터들이 그대로 노출됨., post:요청메시지 바디에 숨겨지니까 노출이 안됨. -->
+		<h2>fieldset이용하기</h2>
+		<fieldset><!-- 체크박스를 하나로 묶음 -->
+			<legend>좋아하는 과목</legend>
+			<input type="checkbox" name="subject1" value="자바">자바 <!-- name은 분류하기위한 이름, value는 사용자가 실제로 보이는 이름. -->
+			<input type="checkbox" name="subject1" value="JDBC">JDBC
+			<input type="checkbox" name="subject1" value="HTML5">HTML5
+			<input type="checkbox" name="subject1" value="서블릿" checked="checked">서블릿 
+		</fieldset>
+		
+		<h2>4. 기타태그</h2><!-- date,number,email은 각각에 맞는 형식이 생성된다. 익스플로러는 구분이 안가는데 크롬에서는 구분이 감. 크로스브라우징을 구현하던지 각 브라우저에서 되는 기능만 쓰든지 해야됨. -->
+		<input type="file" name="photo" value="파일선택"><!-- 파일을 선택한 후 이 파일이 서버쪽으로 넘어가게 만들어야 하는게 중요한데 이건 자바코드로 해줘야 한다. -->
+		<input type="date" name="regdate">
+		<input type="number" name="count">
+		<input type="email" name="mymail">
+		
+		<h2>3. 선택관련 태그</h2>
+		<h3>좋아하는 과목</h3>
+		<input type="checkbox" name="subject1" value="자바">자바 <!-- vlaue없으면 서버로 전송 누르면 subject1 on 이렇게 넘어감. 근데 on말고 어떤게 넘어갔는지가 우리한테 중요한거니까 value를 써준다. --> 
+		<input type="checkbox" name="subject1" value="JDBC">JDBC
+		<input type="checkbox" name="subject1" value="HTML5">HTML5
+		<input type="checkbox" name="subject1" value="서블릿" checked="checked">서블릿 <!-- checked는 기본으로 체크가 되어있게함. -->
+		<br/><br/>
+		
+		<h3>좋아하는 과목</h3>
+		<input type="radio" name="subject2" value="자바">자바 <!-- radio는 같은 name중에서 하나만 선택을 할 수 있다. = 한 그룹 중에서 하나만 선택할 수 있다. -->
+		<input type="radio" name="subject2" value="JDBC" checked="checked">JDBC
+		<input type="radio" name="subject2" value="HTML5">HTML5
+		<input type="radio" name="subject2" value="서블릿">서블릿
+		<br/><br/>
+		
+		<h3>좋아하는 과목</h3>
+		<select name="subject3"><!-- select는 아래 네개가 한 묶음임. 콤보상자 -->
+			<option value="hadoop">hadoop</option>
+			<option value="hive">hive</option>
+			<option value="mongodb">mongodb</option>
+			<option value="sqoop">sqoop</option>
+		</select>
+		<br/><br/><br/>
+		
+		<h3>좋아하는 과목</h3>
+		<select name="subject4" size="10" multiple="multiple"><!-- 10개의 목록을 보여줄 수 있음. -->
+			<option value="hadoop">hadoop</option>
+			<option value="hive">hive</option>
+			<option value="mongodb">mongodb</option>
+			<option value="sqoop">sqoop</option>
+		</select>
+		<br/><br/><br/>
+		
+		<h2>1. 텍스트 관련 태그</h2>
+		아이디:<input type="text" name="id" size="100" maxlength="20"><br/><!-- 그냥 타입만 쓰면 뭐가 아이디인지 패스워드인지 모르니까 name에 뭐가 뭔지 알려줘야됨. --><!-- size: 글자를 쓸 수있는 칸이 길이 설정, maxlength:내가 쓸 수 있는 최대 글자수 설정 -->
+		패스워드:<input type="password" name="pass"><br/>
+		닉네임:<input type="text" name="nickname" value="별칭을 입력하세요" disabled="disabled"><br/><!-- disabled=비활성화, nickname=칸 안에 글을 써넣어놓을 수 있음. -->
+		비고: <br/>
+		<textarea rows="30" cols="30" name="info">자기소개:</textarea> <!-- info:한글,특수문자,띄어쓰기가 인코딩되서 넘어감. -->
+		
+		<h2>2. 버튼 관련 태그</h2>
+		<input type="submit" value="서버로 전송하기"><!-- action에 명시한 어플리케이션을 호출하면서 form안에 있는 모든 name데이터를 서버로 전송함.-> 데이터를 서버로 넘길려면 무조건 form이 있어야된다는 말, action에는 절대경로를 입력해야됨.-->
+		<input type="reset" value="입력취소하기"><!-- 입력한거를 다 지우는 역할 -->
+		<input type="button" value="자바스크립트연결하는버튼" onclick="alert('환영합니다.')"/><!-- onclick:내가 button을 마우스로 클릭했을 때 라는 의미, 자바스크립트를 화면에 띄우는 것.-->
+	</form>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>테이블 연습</h1>
+	<table border="1" width="500"> <!-- html에서 border랑 width등 꾸미는것을 할 수는 있지만 보통은 css에서 해줘야한다. -->
+		<tr bgcolor="skyblue"> <!-- background color -->
+			<th>번호</th>
+			<th>제목</th>
+			<th>저자</th>
+		</tr>
+		<tr align="center">
+			<td>1</td>
+			<td>이클립스</td>
+			<td rowspan="2">스테파니메이어</td> <!-- 행 방향으로 두칸을 합치는 거니까 밑의 행의 td는 세개가 아니라 두개가 되어야함. -->
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>트와일라잇</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>감자</td>
+			<td>김동인</td>
+		</tr>
+		<tr>
+			<td colspan="3"><!-- 컬럼을 합친다 = 3칸을 합친다 라는 뜻. -->
+			비고:<br/>
+			지금은 table을 작성하기 위해 필요한 태그의 연습 중입니다.
+			</td>
+		</tr>
+	</table>
+</body>
+</html>
