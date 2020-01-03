@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!-- 1. css의 기본 사용방법과 선택자의 종류 및 사용방법 -->
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title><!-- head태그 안에 style 태그안에 하는게 내부 스타일시트 -->
+	<link type="text/css" rel= "stylesheet" href="../common/css/mystyle.css">
+	<!-- rel: 얘는 스타일시트 입니다~ 라는뜻, 외부 파일과 연결할때 link요소를 사용함.-->
+	
+	<style type="text/css"> /*--스타일안에 텍스트를 쓸껀데 이건 css형식이다 라는 말.*/
+		p{           /* 1. html태그를 선택자로 사용할 수 있다. style안 말고 아래의 body에서 p로 문단을 나눈 부분에 적용 */
+			color: #7dc163;
+			background-color:yellow;
+		}
+		
+		body{               
+			color: red;
+			font-size:9pt;
+			font-family: 굴림체;
+		} /* 전체문서에 적용하겠다는 말, body가 p의 위에 있을때랑 아래에 있을때랑 변화가 없다.*/
+		
+		.myclass{ /* 2. 태그 내부에 class속성을 정의하고 선택자로 사용할 수 있다.
+						=> 중복해서 정의하는 것이 가능하다.*/
+			color: blue;
+		} /*밑의 바디에 클래스로 되어있는 묶음을 내가 원하는 것으로 설정할 수 있다. 클래스는 .(점) 으로 시작함, 위의 p로 정의한 애들보다 이게 우선순위로 적용되네.*/	
+		
+		#mydiv{/* 3. 태그 내부에 id속성을 정의하고 선택자로  사용할 수 있다.
+					=> id속성은 식별하기 위해서 사용하는 것이므로 한 문서에서
+						동일한 이름의 id는 하나만 정의할 수 있다.
+				*/
+			border: solid blue 1px;
+		} /* id는 #(샵) 으로 시작한다. border: 테두리를 주겠다. solid:실선, blue: 선색은 블루, 1px: 선 굵기는 1픽셀 */
+	</style>
+</head>
+<body>
+	<div class="myclass">
+		W3C가 발표하는 HTML의 최신 버전으로, 2014년 10월 28일 완전히 표준화되었다. 
+		XHTML에서 다시 HTML로 회귀하게 되었다. 따라서 HTML5는 XHTML의 상위 버전이 아니라, 
+		HTML4.01의 상위 버전이다. 완전히 XHTML 문법을 버린 것은 아니고 선택적으로 이용할 수 있게 되어있다. 
+		어도비 플래시나 실버라이트 등의 플러그인을 기반으로 하는 응용 프로그램에 대한 필요성을 줄이는 것에 초점을 
+		맞추고 있다. 이러한 방향성 덕분에 한국에서는 웹 표준에 대한 문제가 이슈로 떠오르면서 함께 주목을 받기도 
+		하였다.
+	</div>
+	<p>
+		HTML5라는 말은 의미가 넓어져, 꼭 W3C의 HTML5 표준만이 아닌 
+		최신 웹 기술(HTML Living Standard, CSS3+, ECMAScript 6+ 등)을 통틀어 칭하기도 한다. 
+		HTML5가 상용화되면서 어도비 플래시는 지원 중단 절차를 밟게 되었다.
+	</p>
+	<div class="myclass">
+		HTML5라는 말은 의미가 넓어져, 꼭 W3C의 HTML5 표준만이 아닌 
+		최신 웹 기술(HTML Living Standard, CSS3+, ECMAScript 6+ 등)을 통틀어 칭하기도 한다. 
+		HTML5가 상용화되면서 어도비 플래시는 지원 중단 절차를 밟게 되었다.
+	</div>
+	<div>
+		HTML5라는 말은 의미가 넓어져, 꼭 W3C의 HTML5 표준만이 아닌 
+		최신 웹 기술(HTML Living Standard, CSS3+, ECMAScript 6+ 등)을 통틀어 칭하기도 한다. 
+		HTML5가 상용화되면서 어도비 플래시는 지원 중단 절차를 밟게 되었다.
+	</div>
+	<p class="myclass">
+		HTML5라는 말은 의미가 넓어져, 꼭 W3C의 HTML5 표준만이 아닌 
+		최신 웹 기술(HTML Living Standard, CSS3+, ECMAScript 6+ 등)을 통틀어 칭하기도 한다. 
+		HTML5가 상용화되면서 어도비 플래시는 지원 중단 절차를 밟게 되었다.
+	</p>
+	<div id="mydiv">
+		HTML5라는 말은 의미가 넓어져, 꼭 W3C의 HTML5 표준만이 아닌 
+		최신 웹 기술(HTML Living Standard, CSS3+, ECMAScript 6+ 등)을 통틀어 칭하기도 한다. 
+		HTML5가 상용화되면서 어도비 플래시는 지원 중단 절차를 밟게 되었다.
+	</div>
+</body>
+</html>

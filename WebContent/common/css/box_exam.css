@@ -1,0 +1,27 @@
+@charset "EUC-KR";
+	body{
+		 font-size: 9pt 
+	}
+	h1{
+		color:#6dacb0;
+	}
+	#first{
+		border: solid white 1px; 
+		margin:30px;
+		padding:20px;
+		padding-left:70px;
+		height: 80px;  /* 위의 body에서 폰트사이즈가 정해져 있어서 패딩 안하고 height로 조절해도 됨. */
+		font-style: italic;
+		border-radius: 20px; /* 모서리가 둥글둥글 */
+		background-color: #a4cccc;
+		background-image:url("../../images/background.gif"); 
+		background-repeat: no-repeat;
+		overflow: auto; /* 이렇게 해주면 글자들이 내가 친 박스를 벗어나지 않고 수평 이동줄이 생긴다. */
+		
+	}
+	#outer{
+		width:80%;
+		margin-left: auto; /* margin-left/right로 가운데 맞춤. */
+		margin-right: auto;
+		text-align: justify; /* 양쪽맞춤 */
+	}
