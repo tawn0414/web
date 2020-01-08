@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="EUC-KR">
+	<title>Insert title here</title>
+	<script type="text/javascript">
+		function printGUGU(num1){
+			for(i=1;i<=9;i++){
+				document.write("<h3>"+num1+"*"+i+"="+(num1*i)+"</h3>"+"\t");
+			}
+		}
+		
+		function calcNum(num1,num2){
+			result = num1 + num2;
+			return result;
+		}
+	</script>
+</head>
+<body>
+	<script type="text/javascript">
+	 num1 = parseInt(window.prompt("숫자를 입력하세요"));
+	 num2 = parseInt(window.prompt("숫자를 입력하세요"));
+	 
+	 result = calcNum(num1,num2);
+	 alert("num1+num2 => "+result);
+	 </script>
+	 <input type='button' value='구구단 출력하기' onclick="printGUGU(window.prompt('단을 입력하세요'))">
+</body>
+</html>
+
+
+
+
+
+
+

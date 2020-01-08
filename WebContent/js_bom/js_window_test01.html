@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+	<script type="text/javascript">
+	//window.confirm, window.alert연습	
+		function testConfirm(){
+			result = window.confirm("정말 삭제할꺼야?"); //boolean 리턴.
+			if(result){ //result가 true면 실행
+				alert("실제 db에서 삭제수행하기")
+			}else{
+				alert("삭제 취소")
+			}
+		}
+	//window.open(팝업 띄우기), window.close연습
+		function searchAddress(){/* 매개변수=> path(상대경로나 절대경로), 윈도우이름, 속성 */
+			mypopup = window.open("js_popup.html", "mywin", "width=300,height=300,top=100,titlebar=yes");
+		} /* popup을 열어준 메인 창을 오프너라고 부름. 팝업-> 윈도우와 팝업의 데이터 교환*/
+	
+		function idcheck(){/* 매개변수=> path(상대경로나 절대경로), 윈도우이름, 속성 */
+			mypopup2 = window.open("js_popup.html", "mywin", "width=300,height=300,top=100,titlebar=yes");
+			//alert(window.document.myform.id.value); //아이티 텍스트창에 쓴 글이 alert해서 쓴다.
+			
+			/* 얘로 하면 크롬에서는 안됨.
+			아래는 메인창의 도큐먼트가 아니라 팝업창의 도큐먼트를 의미함. mypopup2는 팝업창을 의미함.
+			opener의 id에 입력한 값을 팝업의 data로 넘긴다.
+			mypopup2.document.mypopup.data.value = myform.id.value //아이디를 좌변에 저장
+			*/
+			
+		}
+		</script>
+</head> 
+<body>
+	<button onClick="window.alert('경고창')">경고창</button>
+	<button onClick="testConfirm()">확인창</button>
+	<button onClick="test_number()">숫자처리메서드</button>
+	<button onClick="window.close()">닫기</button>
+	
+	<form action="" name="myform">
+		아이디 : <input type="text" name="id">
+		<input type="button" value="아이디체크" onClick="idcheck()">
+		<br>
+		
+		우편번호 : <input type="text" name="zipcode"	>
+		<input type="button" value="SEARCH ADDRESS" onClick="searchAddress()">
+		<br>
+		
+		상세주소 : <input type="text" name="address"><br>
+		<input type="submit" value="SEND">
+	</form>
+</body>
+</html>

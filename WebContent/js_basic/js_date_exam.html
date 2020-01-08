@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="EUC-KR">
+	<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		today = new Date();
+		hours = today.getHours();
+		day = today.getDay();
+		
+		if(hours<12){
+			document.bgColor="lime";
+		}else{
+			document.bgColor="red";
+		}
+		document.write("<img src='../images/jang"+(day+1)+".jpg"+"'/>'");
+	</script>
+</body>
+</html>

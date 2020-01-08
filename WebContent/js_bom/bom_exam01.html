@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="EUC-KR">
+	<title>Insert title here</title>
+		<script type="text/javascript">
+			function test01(){
+				count= aaa.bbb.value;
+				cash = (12900*count)-(12900*count)/10;
+				document.getElementById("result").innerHTML =cash;
+			}
+		</script>
+</head>
+<body>
+	<form name="aaa" action="">
+		수량: <input type = "text" name="bbb" onkeyup="test01()">
+		<span id = "result" style="color:skyblue"></span>
+	</form>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="EUC-KR">
+	<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+	/* 자바스크립트에서는 /(나누기) 하면 소수점이 안버려진다. 그래서 Math.floor로 버려줘야됨. */
+		jumsu = 90;
+		alert(Math.floor(jumsu/10))
+		if(jumsu<0 | jumsu>100){
+			document.write("잘못입력")
+		}else{
+			switch (Math.floor(jumsu/10)){
+			case 10:
+			case 9:
+				document.write("<h1>환영합니다.(수)</h1>")
+				document.write("<img src='../images/jang1.jpg'/>")
+				break;
+			case 8:
+				document.write("<h1>환영합니다.(우)</h1>")
+				break;
+			case 7:
+				document.write("<h1>환영합니다.(미)</h1>")
+				break;
+			case 6:
+				document.write("<h1>환영합니다.(양)</h1>")
+				break;
+			default:
+				document.write("<h1>환영합니다.(가)</h1>")
+				break;
+			}
+		}
+	</script>
+</body>
+</html>

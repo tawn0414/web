@@ -1,0 +1,35 @@
+<!-- 자바스크립트를 사용하는 방법 -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="EUC-KR">
+	<title>Insert title here</title>
+	<script type="text/javascript"> /* type: 형식이 text이고 javascript타입입니다. */
+		//2. head태그 안에 function을 정의하고 사용하는 방법 return타입이 없음
+		function test(){
+			alert("테스트 중 - 자바스크립트 사용방법")  /* alert는 메시지 출력하는 거임. 자바스크립트계의 S.O.P*/
+		}
+	</script>
+	<!-- 4. 외부문서로 작성하고 호출해서 사용하기(.js) -->
+	<script type="text/javascript" 
+	src="/clientweb/common/js/test.js"></script> <!-- 절대 경로-->
+</head>
+<body>
+	<!-- 1.body태그 안에 직접 정의하기 -->
+	<script type="text/javascript">
+		//한 줄 주석
+		/* 자바와 동일한 여러 줄 주석 */
+		document.write("<h1>브라우저에 데이터 출력하기 - 연습용</h1>"); /* ;는 안 찍어도됨. document.write(document에 글을 써라)는 안씀. 자바스크립트 안에서 S.O.P하는거랑 똑같음. document: run했을때 나오는 화면, write: 글을 써라 라는 의미. */
+		test(); //함수 호출방법 = 자바의 메소드 호출방법과 동일. 매개변수가 있으면 매개변수에 대한 작업을 정의하고 호출해야함.
+		test2(); /* script안에서는 이렇게 호출해도 되는데 밖에서는 <input>을 써야한다. */
+	</script>
+	
+	<!-- 3. 태그 내부에서 inline으로 사용하는 방법: 이벤트(마우스나 키보드의 움직임.) 핸들러에 연결해서 사용하는 방법임, 이벤트 핸들러 => 마우스나 키보드에 의한 반응 => onclick-->
+	<input type="button" value="자바스크립트 실행하기" onclick="alert('안녕')">  <!-- onclick: 클릭을 하면 ~를 하겠다. -->
+	<input type="button" value="자바스크립트 함수 호출" onclick="test()">
+	
+	<!-- 4.외부문서로 작성하고 호출하기. -->
+	<input type="button" value="자바스크립트 외부문서의 함수 호출" onclick="test2()">
+	<a href="javascript:test()">연결하기</a>
+</body>
+</html>

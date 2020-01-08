@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="EUC-KR">
+	<title>Insert title here</title>
+	<script type="text/javascript">
+		//모두 선택 버튼을 누르면 food라는 name으로 정의된 checkbox를 제어.
+		function allcheck(){
+			//food라는 이름으로 정의된 checkbox가 여러 개 이므로 배열로 관리한다.
+			mycheck = document.cbfmt.food;
+			alert(mycheck);
+			alert(mycheck.length);
+			//document.getElementById("result") /* browser로 표시되어 있지만 Dom도 포함한거임. */
+			//innerHTML은 문자열 컨테츠를 추가할 목적으로 사용함 -> 기존의 컨텐츠를 덮는다. div, p태그 ,span에서만 사용가능
+			document.getElementById("result").innerHTML = "<h1>결과</h1>";
+		}
+	
+		function printText(){
+			myval = cbfmt.test.value;//우변에 있으니까 getter
+			document.getElementById("result").innerHTML = "<h1>"+myval+"</h1>";
+		}
+	</script>
+</head>
+   
+<body>
+	
+		<form name="cbfmt">
+			<label>아이스크림</label> 
+			<input type="checkbox" name="food"
+			 value="아이스크림" id="ice"> 
+				<label>커피</label> <input type="checkbox"	
+				name="food" value="커피" id="coffee">
+				 <label>음료수</label> <input type="checkbox" 
+				 name="food" value="음료수" id="beverage"> 
+				<label>모두체크/해제</label>
+			<input type="checkbox" name="allchk" 
+			id="allchk" onclick="allcheck()"><br> <!-- 체크박스 제어=> 전체선택/해제는 여러개의 데이터를 한꺼번에 다루는 거니까 배열에 저장한다. -->
+			
+			<input type="button" value="전송" onclick="ckFunc()">
+			<input type="text" name="test" onkeyup="printText()">
+		</form>
+		<div id="result"><!-- div는 BOM으로 접근 못함. DOM으로 접근해야됨. -->
+			
+		</div>
+	
+</body>
+</html>
