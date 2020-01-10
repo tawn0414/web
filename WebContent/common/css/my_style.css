@@ -1,0 +1,17 @@
+#clickMe {
+	background: yellow;
+	padding: 20px;
+	text-align: center;
+	width: 205px;
+	display: block; /* 화면에 보여지게 하겠다. */
+	border: 2px solid #000;
+}
+
+#picframe {
+	background: yellow;
+	padding: 20px;
+	width: 600px;
+	display: none; /* 화면이 실행될때 처음부터 안보이게 하겠다. */
+	border: 2px solid #000;
+}
+

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
+	<title>Insert title here</title>
+	<script type="text/javascript">
+		function insertP(){
+			pNode = document.createElement("p");
+			pNode.setAttribute("style", "background: yellow");
+			textNode = document.createTextNode("newP");
+			pNode.appendChild(textNode);
+			parentNode = document.getElementById("root");
+			parentNode.appendChild(pNode);
+		}
+		
+		function deleteP(){
+			parentNode = document.getElementById("root");
+			/* if(parentNode.lastChild.nodeName == "#text"){ #text는 공백을 의미
+				parentNode.removeChild(parentNode.lastChild);
+			}
+			parentNode.removeChild(parentNode.lastChild); 이렇게 해도됨.*/
+			parentNode.removeChild(parentNode.lastElementChild); //lastElementChild는 태그 노드들 중에서 마지막꺼(공백 포함안함). lastChild는 모든 노드들 중 마지막꺼(공백포함.)
+		}
+		
+		function deleteDivAndP(){
+			//root의 모든 하위 엘리먼트를 제거
+			parentNode = document.getElementById("root");
+			childnodelist = parentNode.childNodes;
+			//hasChildNodes() : 하위노드가 있으면 true를 리턴
+			while(parentNode.hasChildNodes()){
+				console.log("삭제완료");
+				parentNode.removeChild(parentNode.lastChild);
+			}
+			/* size = childnodelist.length;
+			for(i = 0; i<size;i++){ //지우는 범위를 고정된 값을 줌.
+				console.log(size); //이게 S.O.P와 같은 것. alert대신 이거쓰자. F12의 console에서 확인가능.
+				parentNode.removeChild(parentNode.lastChild);
+			} 이렇게 해도됨.*/
+		}
+	</script>
+</head>
+<body>
+	<div id="layer"></div>
+
+	<hr>
+
+	<div id="root">
+		<p style="background: gray;">line01</p>
+		<p style="background: skyblue">line02</p>
+		<p style="background: green;">line03</p>
+		<p style="background: red;">line04</p>
+	</div>
+
+	<hr>
+	<button onclick="insertP()">P태그추가하기</button>
+	<button onclick="deleteP()">P태그삭제하기</button>
+	<button onclick="deleteDivAndP()">div안의 모든 p태그 삭제하기</button>
+	<button onclick="innerHTML_test()">innerHTML</button>
+
+
+</body>
+</html>

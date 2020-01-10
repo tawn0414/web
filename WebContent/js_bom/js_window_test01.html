@@ -29,12 +29,26 @@
 			*/
 			
 		}
+		function test_number(){
+			num1 = window.parseInt(myform.num1.value); //value속성이 오른쪽에 있으면 getter: num1의 value를 읽어갖고 오라는 말.
+			num2 = parseInt(myform.num2.value); //parseInt안해주면 값이 String이라서 숫자 덧셈이 안됨
+			myform.result.value = num1+num2; //value속성이 왼쪽에 있으면 setter
+		}
+		function test_number2(){
+			alert("isNaN의 결과=>"+window.isNaN(myform.num1.value));
+			//alert("eval의 결과=>"+eval(myform.num1.value)); //연산의 결과를 보여줌
+			data = myform.num1.value;
+			alert("문자열의 길이=>"+data.length); //눈에 보이지 않는 공백의 갯수도 셈. trim으로 공백을 지워주자
+			data2 = data.trim()
+			alert("공백이 제거 된 문자열의 길이=>"+data2.length)
+		}
 		</script>
 </head> 
 <body>
 	<button onClick="window.alert('경고창')">경고창</button>
 	<button onClick="testConfirm()">확인창</button>
 	<button onClick="test_number()">숫자처리메서드</button>
+	<button onClick="test_number2()">숫자처리메서드2</button>
 	<button onClick="window.close()">닫기</button>
 	
 	<form action="" name="myform">
@@ -47,6 +61,9 @@
 		<br>
 		
 		상세주소 : <input type="text" name="address"><br>
+		num1 : <input type="text" name="num1"><br>
+		num2 : <input type="text" name="num2"><br>
+		결과 : <input type="text" name="result"><br>
 		<input type="submit" value="SEND">
 	</form>
 </body>

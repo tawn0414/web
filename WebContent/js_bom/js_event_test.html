@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="EUC-KR">
+	<title>Insert title here</title>
+	<script type="text/javascript">
+		function calc(){
+			num1 = parseInt(myform1.num1.value);
+			myform1.num2.value = num1 *1.2;
+		}
+		function formexe(workingform){
+			//일반 버튼을 submit처럼 활용할때 사용하는 메소드
+			workingform.submit();
+		}
+	</script>
+</head>
+<body onload="alert('페이지로딩')"> <!-- onload:페이지가 로딩될 때 발생하는 이벤트 -->
+	<form name="myform1" action="test.jsp">
+		<input type="text" name="num1" onchange = "calc()"> <!-- onchange: 요소의 상태가 변경됐을때 발생하는 이벤트 -->
+		<input type="text" name="num2">
+		<input type="button" value="전송1" onclick = "formexe(this.form)"> <!-- button을 누를때 submit을 누른것과 같은 효과내기. -->
+		<input type="submit" value="전송2"> <!-- 하나의 form안에서 submit은 하나밖에 못쓴다. submit은 action을 실행하면서 입력한 name,value들을 서버로 전송한다. -->
+	</form>
+	<form name="myform2" action="test.jsp">
+		<input type="text" name="num1" onchange = "calc()"> <!-- onchange: 요소의 상태가 변경됐을때 발생하는 이벤트 -->
+		<input type="text" name="num2">
+		<input type="button" value="전송1" onclick = "formexe(this.form)"> <!-- 전송1을 눌렀을때 뭔가가 적용되면 좋겠으니까 전송1쪽에 formexe(this.form)해준거. -->
+		<input type="submit" value="전송2"> 
+	</form>
+	<form name="myform3" action="test.jsp">
+		<input type="text" name="num1" onchange = "calc()"> <!-- onchange: 요소의 상태가 변경됐을때 발생하는 이벤트 -->
+		<input type="text" name="num2">
+		<input type="button" value="전송1" onclick = "formexe(this.form)"> 
+		<input type="submit" value="전송2">
+	</form>
+	<img alt="" src="/clientweb/images/ses_g1.jpg" name="myimg" 
+	onmouseover="myimg.src='/clientweb/images/ses_g2.jpg'"
+	onmouseout="myimg.src='/clientweb/images/ses_g1.jpg'"><!-- 이미지를 객체로 제어하려면 name,id,class중 하나는 정의되어 있어야됨. -->
+
+</body>
+</html>

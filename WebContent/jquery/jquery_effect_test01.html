@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="EUC-KR">
+	<title>Insert title here</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+	<link rel = "stylesheet" href="../common/css/my_style.css"/>
+</head>
+<body>
+
+	<div id="clickMe">여기를 누르세요.</div> <!-- clickMe를 한번 누르면 보이고 또 누르면 안보이고를 반복 -->
+	<div id="picframe">
+		<img alt="" src="../images/m_garden01.jpg">
+	</div>
+	<script type="text/javascript">
+		//페이지가 로딩되고 dom객체가 형성이 되면 익명의 함수를 실행하겠습니다. js_basic_dom.html의 위쪽에 쓴. window.onload와 똑같다.
+		$(document).ready(function() {
+			//id가 clickMe로 정의 된 객체가 클릭되면 익명의 함수를 사용하겠다는 의미
+			$("#clickMe").click(function() {
+			//id가 picframe으로 정의된 객체를 화면에 보여지도록하고 다시 클릭하면 화면에서 사라지도록 할꺼.
+				$("#picframe").slideToggle();
+			});
+		});
+	</script>
+</body>
+</html>
