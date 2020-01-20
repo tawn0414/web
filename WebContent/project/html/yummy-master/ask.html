@@ -27,15 +27,6 @@
     <div id="preloader">
         <div class="yummy-load"></div>
     </div>
-
-    <!-- Background Pattern Swither -->
-    <div id="pattern-switcher">
-        Bg Pattern
-    </div>
-    <div id="patter-close">
-        <i class="fa fa-times" aria-hidden="true"></i>
-    </div>
-
     <!-- ****** Top Header Area Start ****** -->
     <div class="top_header_area">
         <div class="container">
@@ -79,7 +70,6 @@
         </div>
     </div>
     <!-- ****** Top Header Area End ****** -->
-
     <!-- ****** Header Area Start ****** -->
     <header class="header_area">
         <div class="container">
@@ -87,11 +77,10 @@
                 <!-- Logo Area Start -->
                 <div class="col-12">
                     <div class="logo_area text-center">
-                        <a href="index.html" class="yummy-logo">매끼세끼</a>
+                        <a href="index.html" class="yummy-logo">Maeggi Seggi</a>
                     </div>
                 </div>
             </div>
-
             <div class="row">
                 <div class="col-12">
                     <nav class="navbar navbar-expand-lg">
@@ -99,39 +88,37 @@
                         <!-- Menu Area Start -->
                         <div class="collapse navbar-collapse justify-content-center" id="yummyfood-nav">
                             <ul class="navbar-nav" id="yummy-nav">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="index.html">MY FRIDGE<span class="sr-only">(current)</span></a>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="yummyDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
+                                    <a class="nav-link dropdown-toggle" href="#" id="yummyDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ABOUT US</a>
                                     <div class="dropdown-menu" aria-labelledby="yummyDropdown">
-                                        <a class="dropdown-item" href="index.html">Home</a>
-                                        <a class="dropdown-item" href="archive.html">Archive</a>
-                                        <a class="dropdown-item" href="single.html">Single Blog</a>
-                                        <a class="dropdown-item" href="static.html">Static Page</a>
-                                        <a class="dropdown-item" href="contact.html">Contact</a>
+                                        <a class="dropdown-item" href="index.html"></a>
+                                        <a class="dropdown-item" href="archive.html">INTRO</a>
+                                        <a class="dropdown-item" href="single.html">GRADE</a>
+                                        <a class="dropdown-item" href="static.html">QnA</a>
+                                        <a class="dropdown-item" href="contact.html">CONTACT</a>
                                     </div>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Features</a>
+                                    <a class="nav-link" href="#">RECIPE</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Categories</a>
+                                    <a class="nav-link" href="#">RESTAURANT</a>
                                 </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="mypage_main.html" id="yummyDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">마이페이지</a>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="mypage_main.html">MY PAGE</a>
                                     <div class="dropdown-menu" aria-labelledby="yummyDropdown">
                                         <a class="dropdown-item" href="recipe_favorite.html">즐겨찾는</a>
                                         <a class="dropdown-item" href="mypoint.html">나의 포인트</a>
                                         <a class="dropdown-item" href="information_update.html">나의 정보 수정</a>
                                         <a class="dropdown-item" href="ask.html">1:1 문의사항</a>
                                     </div>
+                                    
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">About</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="contact.html">Contact</a>
+                                    <a class="nav-link" href="#">MANAGE</a>
                                 </li>
                             </ul>
                         </div>
@@ -161,7 +148,7 @@
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="#"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">마이페이지</li>
+                            <li class="breadcrumb-item active" aria-current="page">MyPage</li>
                             <li class="breadcrumb-item active" aria-current="page">1:1 문의사항</li>
                         </ol>
                     </nav>
@@ -174,68 +161,71 @@
 	<!-- 1:1 ask area start -->
     <div id="ask">
     <div>
-		<fieldset>
+		<fieldset style="text-align: center;">
 			<legend>게시글 검색</legend>
 			<div class="">
 				<div class="">
 					<span>전체</span>
-					<strong>10</strong>
+					<strong>1</strong>
 					<span>건</span>
 				</div>
 				<div class="">
 					<div class=""> 
 						<select>
-							<option value="title" selected="">제목</option>
-							<div>
-								<label class="label">검색어 입력</label>
+							<option value="title" selected="selected">제목</option>
+							<option value="title">등록 일자</option>
+						</select>&nbsp;
+							<span >
 								<input class="" id="" type="text" value="" />
-								<button class="" type="submit">
 									<span class="">
-										<i class="">검색시작</i>
+										<input type = "button" id="towrite" value="검색" onclick="" style="color:white; background-color: #fc6c3f; width: 100px;">	
 									</span>
-								</button>
 									<span class="write">
-										<input type = "button" id="towrite" value="글쓰기" onclick="location.replace('ask_write.html')">
+										<input type = "button" id="towrite" value="글쓰기" onclick="location.href='ask_write.html'" style="color:white; background-color: #fc6c3f; width: 100px;">
 									</span>
-							</div>
-						</select>
+							</span>
 					</div>
 				</div>
 			</div>
 		</fieldset>
+		<p></p>
 	</div>
-		<div id="aaa">
-			<table border="1" style="width: 800px; height: 100px">
-				<thead>
-				<tr>
-					<th scope="col">No</th>
-					<th scope="col">제목</th>
-					<th scope="col">등록일자</th>
-					<th scope="col">답변상태</th>
+		<div>
+			<table id ="table_boardlist" border="1" style="width: 800px; height: 100px; text-align: center;margin-left: auto; margin-right: auto;">
+				<tr style="font-weight: bold;">
+					<td scope="col">No</td>
+					<td scope="col">제목</td>
+					<td scope="col">등록일자</td>
+					<td scope="col">답변상태</td>
 				</tr>
-				</thead>
-				<tbody>
 				<tr>
 					<td>1</td>
 					<td><a href="ask_title.html">제목이 뭘까</a></td>
 					<td>2020-01-14</td>
-					<td>답변완료</td>
+					<td>답변 대기중</td>
 				</tr>
-				</tbody>
 			</table>
 		</div>
-		<div id = "aaa">
-			<ul id="pagelists">
-				<li><a href="#">◀</a></li>
-				<li><a href="#">1</a></li>
-				<li><a href="#">2</a></li>
-				<li><a href="#">3</a></li>
-				<li><a href="#">4</a></li>
-				<li><a href="#">5</a></li>
-				<li><a href="#">▶</a></li>		
-			</ul>
-		</div>
+			<div>                    
+				<div class="pagination-area d-sm-flex mt-15">
+                        <nav aria-label="#">
+                            <ul class="pagination">
+                                <li class="page-item active">
+                                    <a class="page-link" href="#">1 <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">Next <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                                </li>
+                            </ul>
+                        </nav>
+            	 </div>
+             </div>
 	</div>
+	<p></p>
 	<!-- 1:1 ask area end -->
     
     
@@ -407,7 +397,7 @@
     </div>
     <!-- ****** Footer Social Icon Area End ****** -->
 
-    <!-- ****** Footer Menu Area Start ****** -->
+<!-- ****** Footer Menu Area Start ****** -->
     <footer class="footer_area">
         <div class="container">
             <div class="row">
@@ -415,7 +405,7 @@
                     <div class="footer-content">
                         <!-- Logo Area Start -->
                         <div class="footer-logo-area text-center">
-                            <a href="index.html" class="yummy-logo">매끼세끼</a>
+                            <a href="index.html" class="yummy-logo">Maeggi Seggi</a>
                         </div>
                         <!-- Menu Area Start -->
                         <nav class="navbar navbar-expand-lg">
@@ -424,22 +414,22 @@
                             <div class="collapse navbar-collapse justify-content-center" id="yummyfood-footer-nav">
                                 <ul class="navbar-nav">
                                     <li class="nav-item active">
-                                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                                        <a class="nav-link" href="#">MY FRIDGE<span class="sr-only">(current)</span></a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Features</a>
+                                        <a class="nav-link" href="#">ABOUT US</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Categories</a>
+                                        <a class="nav-link" href="#">RECIPE</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="mypage_main.html">마이페이지</a>
+                                        <a class="nav-link" href="#">RESTAURANT</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">About</a>
+                                        <a class="nav-link" href="#">MY PAGE</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Contact</a>
+                                        <a class="nav-link" href="#">MANAGE</a>
                                     </li>
                                 </ul>
                             </div>

@@ -1496,38 +1496,6 @@ li {
 
 
 
-#ask{
-	padding: 0 auto;
+.mypage_info_texts{
+	margin-bottom: 10px;
 }
-#ask_write{
-	position: relative;
-	left: 500px;
-	width: 800px;
-	height: 200px;
-	
-}
-#ask_title{
-	position: relative;
-	left: 500px;
-}
-#mypage_main{
-	position: relative;
-	left: 250px;
-}
-#mypoint{
-	position: relative;
-	left: 500px;
-	
-}
-#information_update{
-	position: relative;
-	left: 500px;
-	
-}
-#diet_menu{
-	position: relative;
-	left: 500px;
-}
-/* #pagelists li{
-	float: left;
-} */

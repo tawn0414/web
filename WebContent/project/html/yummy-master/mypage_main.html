@@ -23,19 +23,10 @@
 </head>
 
 <body>
-    <!-- Preloader Start -->
+<!-- Preloader Start -->
     <div id="preloader">
         <div class="yummy-load"></div>
     </div>
-
-    <!-- Background Pattern Swither -->
-    <div id="pattern-switcher">
-        Bg Pattern
-    </div>
-    <div id="patter-close">
-        <i class="fa fa-times" aria-hidden="true"></i>
-    </div>
-
     <!-- ****** Top Header Area Start ****** -->
     <div class="top_header_area">
         <div class="container">
@@ -79,7 +70,6 @@
         </div>
     </div>
     <!-- ****** Top Header Area End ****** -->
-
     <!-- ****** Header Area Start ****** -->
     <header class="header_area">
         <div class="container">
@@ -87,11 +77,10 @@
                 <!-- Logo Area Start -->
                 <div class="col-12">
                     <div class="logo_area text-center">
-                        <a href="index.html" class="yummy-logo">매끼세끼</a>
+                        <a href="index.html" class="yummy-logo">Maeggi Seggi</a>
                     </div>
                 </div>
             </div>
-
             <div class="row">
                 <div class="col-12">
                     <nav class="navbar navbar-expand-lg">
@@ -99,40 +88,37 @@
                         <!-- Menu Area Start -->
                         <div class="collapse navbar-collapse justify-content-center" id="yummyfood-nav">
                             <ul class="navbar-nav" id="yummy-nav">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="index.html">MY FRIDGE<span class="sr-only">(current)</span></a>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="yummyDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
+                                    <a class="nav-link dropdown-toggle" href="#" id="yummyDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ABOUT US</a>
                                     <div class="dropdown-menu" aria-labelledby="yummyDropdown">
-                                        <a class="dropdown-item" href="index.html">Home</a>
-                                        <a class="dropdown-item" href="archive.html">Archive</a>
-                                        <a class="dropdown-item" href="single.html">Single Blog</a>
-                                        <a class="dropdown-item" href="static.html">Static Page</a>
-                                        <a class="dropdown-item" href="contact.html">Contact</a>
+                                        <a class="dropdown-item" href="index.html"></a>
+                                        <a class="dropdown-item" href="archive.html">INTRO</a>
+                                        <a class="dropdown-item" href="single.html">GRADE</a>
+                                        <a class="dropdown-item" href="static.html">QnA</a>
+                                        <a class="dropdown-item" href="contact.html">CONTACT</a>
                                     </div>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Features</a>
+                                    <a class="nav-link" href="#">RECIPE</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Categories</a>
+                                    <a class="nav-link" href="#">RESTAURANT</a>
                                 </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="mypage_main.html" id="yummyDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">마이페이지</a>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="mypage_main.html">MY PAGE</a>
                                     <div class="dropdown-menu" aria-labelledby="yummyDropdown">
                                         <a class="dropdown-item" href="recipe_favorite.html">즐겨찾는</a>
                                         <a class="dropdown-item" href="mypoint.html">나의 포인트</a>
                                         <a class="dropdown-item" href="information_update.html">나의 정보 수정</a>
                                         <a class="dropdown-item" href="ask.html">1:1 문의사항</a>
                                     </div>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">About</a>
+                                    
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="contact.html">Contact</a>
+                                    <a class="nav-link" href="#">MANAGE</a>
                                 </li>
                             </ul>
                         </div>
@@ -149,7 +135,7 @@
             <div class="row h-100 align-items-center">
                 <div class="col-12">
                     <div class="bradcumb-title text-center">
-                        <h2>마이페이지</h2>
+                        <h2>MyPage</h2>
                     </div>
                 </div>
             </div>
@@ -162,7 +148,7 @@
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="#"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">마이페이지</li>
+                            <li class="breadcrumb-item active" aria-current="page">MyPage</li>
                         </ol>
                     </nav>
                 </div>
@@ -174,13 +160,14 @@
 	<!-- mypage main area start -->
 		<div id="mypage_main">
 			<div>
-				<table>
-					<tr>
+				<table style="margin-left: auto; margin-right: auto;">
+					<tr align="center">
 						<th>
 						<span>즐겨찾는 레시피:</span>
 						<strong>10</strong>
 						<span>개</span>
 						</th>
+						<th></th>
 						<th>
 						<span>point:</span>
 						<strong>50</strong>
@@ -190,19 +177,19 @@
 				</table>
 			</div>
 			<div>
-				<table border="1" style="width: 800px; height: 300px">
-					<tr>
-						<th></th>
-						<th scope="col">일요일</th>
-						<th scope="col">월요일</th>
-						<th scope="col">화요일</th>
-						<th scope="col">수요일</th>
-						<th scope="col">목요일</th>
-						<th scope="col">금요일</th>
-						<th scope="col">토요일</th>
+				<table border="1" style="width: 800px; height: 300px; margin-left: auto; margin-right: auto;">
+					<tr align="center" style="font-weight: bolder;">
+						<td></td>
+						<td>일요일</td>
+						<td>월요일</td>
+						<td>화요일</td>
+						<td>수요일</td>
+						<td>목요일</td>
+						<td>금요일</td>
+						<td>토요일</td>
 					</tr>
-					<tr>
-						<td scope="row">아침</td>
+					<tr align="center">
+						<td scope="row" style="font-weight: bolder;">아침</td>
 						<td>김치</td>
 						<td></td>
 						<td></td>
@@ -211,8 +198,8 @@
 						<td></td>
 						<td></td>
 					</tr>
-					<tr>
-						<td scope="row">점심</td>
+					<tr align="center">
+						<td scope="row" style="font-weight: bolder;">점심</td>
 						<td></td>
 						<td></td>
 						<td></td>
@@ -221,8 +208,8 @@
 						<td></td>
 						<td></td>
 					</tr>
-					<tr>
-						<td scope="row">저녁</td>
+					<tr align="center">
+						<td scope="row" style="font-weight: bolder;">저녁</td>
 						<td></td>
 						<td></td>
 						<td></td>
@@ -233,10 +220,10 @@
 					</tr>
 				</table>
 			</div>
-		<div class="buttons">
-				<input type="button" value="<월 전체보기>" onclick="location.replace('calander.html')"/>
+		<div style="text-align: center;">
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" value="<월 전체보기>" onclick="window.open('calander.html', 'calender','width=850,height=500,location=no,status=no,scrollbars=yes')"/>
 		</div>
-		<div class="kcal">
+		<div style="text-align: center;">
 			<div>
 				<span>오늘 섭취한 칼로리:</span>
 				<input type="text" value=""/>
@@ -247,7 +234,7 @@
 				</button>
 				<b></b>
 			</div>
-			<div class="exercise">
+			<div>
 				<div>
 					<label>걷기=</label>
 					<span id=""></span>
@@ -437,7 +424,7 @@
     </div>
     <!-- ****** Footer Social Icon Area End ****** -->
 
-    <!-- ****** Footer Menu Area Start ****** -->
+<!-- ****** Footer Menu Area Start ****** -->
     <footer class="footer_area">
         <div class="container">
             <div class="row">
@@ -445,7 +432,7 @@
                     <div class="footer-content">
                         <!-- Logo Area Start -->
                         <div class="footer-logo-area text-center">
-                            <a href="index.html" class="yummy-logo">매끼세끼</a>
+                            <a href="index.html" class="yummy-logo">Maeggi Seggi</a>
                         </div>
                         <!-- Menu Area Start -->
                         <nav class="navbar navbar-expand-lg">
@@ -454,22 +441,22 @@
                             <div class="collapse navbar-collapse justify-content-center" id="yummyfood-footer-nav">
                                 <ul class="navbar-nav">
                                     <li class="nav-item active">
-                                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                                        <a class="nav-link" href="#">MY FRIDGE<span class="sr-only">(current)</span></a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Features</a>
+                                        <a class="nav-link" href="#">ABOUT US</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Categories</a>
+                                        <a class="nav-link" href="#">RECIPE</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="mypage_main.html">마이페이지</a>
+                                        <a class="nav-link" href="#">RESTAURANT</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">About</a>
+                                        <a class="nav-link" href="#">MY PAGE</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Contact</a>
+                                        <a class="nav-link" href="#">MANAGE</a>
                                     </li>
                                 </ul>
                             </div>

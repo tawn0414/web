@@ -23,19 +23,10 @@
 </head>
 
 <body>
-    <!-- Preloader Start -->
+ <!-- Preloader Start -->
     <div id="preloader">
         <div class="yummy-load"></div>
     </div>
-
-    <!-- Background Pattern Swither -->
-    <div id="pattern-switcher">
-        Bg Pattern
-    </div>
-    <div id="patter-close">
-        <i class="fa fa-times" aria-hidden="true"></i>
-    </div>
-
     <!-- ****** Top Header Area Start ****** -->
     <div class="top_header_area">
         <div class="container">
@@ -79,7 +70,6 @@
         </div>
     </div>
     <!-- ****** Top Header Area End ****** -->
-
     <!-- ****** Header Area Start ****** -->
     <header class="header_area">
         <div class="container">
@@ -87,11 +77,10 @@
                 <!-- Logo Area Start -->
                 <div class="col-12">
                     <div class="logo_area text-center">
-                        <a href="index.html" class="yummy-logo">매끼세끼</a>
+                        <a href="index.html" class="yummy-logo">Maeggi Seggi</a>
                     </div>
                 </div>
             </div>
-
             <div class="row">
                 <div class="col-12">
                     <nav class="navbar navbar-expand-lg">
@@ -99,39 +88,37 @@
                         <!-- Menu Area Start -->
                         <div class="collapse navbar-collapse justify-content-center" id="yummyfood-nav">
                             <ul class="navbar-nav" id="yummy-nav">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="index.html">MY FRIDGE<span class="sr-only">(current)</span></a>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="yummyDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
+                                    <a class="nav-link dropdown-toggle" href="#" id="yummyDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ABOUT US</a>
                                     <div class="dropdown-menu" aria-labelledby="yummyDropdown">
-                                        <a class="dropdown-item" href="index.html">Home</a>
-                                        <a class="dropdown-item" href="archive.html">Archive</a>
-                                        <a class="dropdown-item" href="single.html">Single Blog</a>
-                                        <a class="dropdown-item" href="static.html">Static Page</a>
-                                        <a class="dropdown-item" href="contact.html">Contact</a>
+                                        <a class="dropdown-item" href="index.html"></a>
+                                        <a class="dropdown-item" href="archive.html">INTRO</a>
+                                        <a class="dropdown-item" href="single.html">GRADE</a>
+                                        <a class="dropdown-item" href="static.html">QnA</a>
+                                        <a class="dropdown-item" href="contact.html">CONTACT</a>
                                     </div>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Features</a>
+                                    <a class="nav-link" href="#">RECIPE</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Categories</a>
+                                    <a class="nav-link" href="#">RESTAURANT</a>
                                 </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="mypage_main.html" id="yummyDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">마이페이지</a>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="mypage_main.html">MY PAGE</a>
                                     <div class="dropdown-menu" aria-labelledby="yummyDropdown">
                                         <a class="dropdown-item" href="recipe_favorite.html">즐겨찾는</a>
                                         <a class="dropdown-item" href="mypoint.html">나의 포인트</a>
                                         <a class="dropdown-item" href="information_update.html">나의 정보 수정</a>
                                         <a class="dropdown-item" href="ask.html">1:1 문의사항</a>
                                     </div>
-                                </li> 
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">About</a>
+                                    
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="contact.html">Contact</a>
+                                    <a class="nav-link" href="#">MANAGE</a>
                                 </li>
                             </ul>
                         </div>
@@ -148,7 +135,7 @@
             <div class="row h-100 align-items-center">
                 <div class="col-12">
                     <div class="bradcumb-title text-center">
-                        <h2>내 정보수정</h2>
+                        <h2>정보수정</h2>
                     </div>
                 </div>
             </div>
@@ -161,7 +148,7 @@
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="#"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">마이페이지</li>
+                            <li class="breadcrumb-item active" aria-current="page">MyPage</li>
                             <li class="breadcrumb-item active" aria-current="page">나의 정보수정</li>
                         </ol>
                     </nav>
@@ -173,26 +160,24 @@
 	
 	<!-- information_update area start -->
 	<div id="information_update">
-		<h2 class="">회원정보 입력</h2>
 		<div class="">
 			<fieldset>
-				<legend>회원정보 입력</legend>
 				<div class="">
 					<div class="">
 						<div class="">
 							<div class="">
-								<label>아이디</label>
-								<div class="">
-									<input name="id" class="" type="text" disabled="disabled"/>
+								
+								<div class="mypage_info_texts">
+									<input name="id" class="" type="text" disabled="disabled" placeholder="아이디"/>
 								</div>
 							</div>
 							<p class="" style="display: none;"></p>
 						</div>
 						<div class="">
 							<div class="">
-								<label>비밀번호</label>
-								<div class="">
-									<input name="" class="" type="password">
+								
+								<div class="mypage_info_texts">
+									<input name="" class="" type="password" placeholder="비밀번호">
 									<span class="" style="display: none;"></span>
 								</div>
 							</div>
@@ -200,9 +185,9 @@
 						</div>
 						<div class="">
 							<div class="">
-								<label>비밀번호 확인</label>
-								<div class="">
-									<input name="" class="" type="password"/>
+								
+								<div class="mypage_info_texts">
+									<input name="" class="" type="password" placeholder="비밀번호 확인"/>
 									<span class=""></span>
 								</div>
 							</div>
@@ -213,24 +198,24 @@
 					<div class="">
 						<div class="">
 							<div class="">
-								<label>이름</label>
-								<div class="">
-									<input name="" class="" type="text" disabled="disabled"/>
+								
+								<div class="mypage_info_texts">
+									<input name="" class="" type="text" disabled="disabled" placeholder="이름"/>
 								</div>
 							</div>
 						</div>
-						<div class="birth">
+						<div class="mypage_info_texts">
 							<div class="">
 								<div class="year">
 									<div class="">
-										<label class="">주민등록번호</label>
+										
 										<div>
 											<span class="">
-												<input name="" class="" type="text" maxlength="6" disabled="disabled"/>
+												<input name="" class="" type="text" maxlength="6" disabled="disabled" placeholder="주민번호 앞자리"/>
 											</span>
 											<span>-</span>
 											<span>
-												<input name="" class="" type="text" maxlength="7" disabled="disabled"/>
+												<input name="" class="" type="text" maxlength="7" disabled="disabled" placeholder="주민번호 뒷자리"/>
 											</span>
 										</div>
 									</div>
@@ -255,8 +240,8 @@
 				<div class="">
 					<div class="">
 						<div class="">
-							<div class="">
-								<label class="">휴대전화 (숫자만 입력)</label>
+							<div class="mypage_info_texts">
+								
 								<div class="">
 									<span class="">
 										<select name="selectPhone" title="휴대폰 앞 3자리" class="">
@@ -269,24 +254,24 @@
 										</select>
 									</span>
 									<span class="num">
-										<input name="inputPhone" class="" type="tel" maxlength="8"/>
+										<input name="inputPhone" class="" type="tel" maxlength="8" placeholder="휴대폰 번호 (숫자만)"/>
 									</span>
 								</div>
 							</div>
 							<p class="" style="display: none;"></p>
 						</div>
-						<div class="email">
+						<div class="mypage_info_texts">
 							<div class="">
 								<div class="">
 									<div class="">
-										<label class="">이메일</label>
+										
 									</div>
 									<span class="">
-										<input name="" class="" type="text"/>
+										<input name="" class="" type="text" placeholder="이메일"/>
 									</span>
 									<span class="">@</span>
 									<span class="">
-										<input name="" class="" type="text"/>
+										<input name="" class="" type="text" placeholder="직접입력"/>
 									</span>
 									<select name="selectEmail" title="" class="">
 										<option value="naver.com">naver.com</option>
@@ -298,26 +283,26 @@
 								</div>
 							</div>
 						</div>
-						<div class="height">
+						<div class="mypage_info_texts">
 							<div class="">
-								<label class="">키(cm)</label>
+								
 								<div class="">
-									<input name="inputHeight" class="" type="text" maxlength="3"/>
+									<input name="inputHeight" class="" type="text" maxlength="3" placeholder="키(cm)"/>
 								</div>
 							</div>
 						</div>
-						<div class="weight">
+						<div class="mypage_info_texts">
 							<div class="">
-								<label class="">몸무게(kg)</label>
+								
 								<div class="">
-									<input name="inputWeight" class="" type="text" maxlength="3"/>
+									<input name="inputWeight" class="" type="text" maxlength="3" placeholder="몸무게(kg)"/>
 								</div>
 							</div>
 						</div>
 						<p></p>
 						<div>
-							<button class="" onclick="location.replace('mypage_main.html')" type="button">수정</button>
-							<button class="" onclick="location.replace('mypage_main.html')" type="button">수정 취소</button>
+							<input type="button" value="수정" onclick="location.href='mypage_main.html'" style="margin-right: 100px; width: 50px"/>
+							<input type="button" value="수정 취소" onclick="location.href='mypage_main.html'"/>
 						</div>
 					</div>
 				</div>
@@ -362,7 +347,7 @@
     </div>
     <!-- ****** Footer Social Icon Area End ****** -->
 
-    <!-- ****** Footer Menu Area Start ****** -->
+<!-- ****** Footer Menu Area Start ****** -->
     <footer class="footer_area">
         <div class="container">
             <div class="row">
@@ -370,7 +355,7 @@
                     <div class="footer-content">
                         <!-- Logo Area Start -->
                         <div class="footer-logo-area text-center">
-                            <a href="index.html" class="yummy-logo">매끼세끼</a>
+                            <a href="index.html" class="yummy-logo">Maeggi Seggi</a>
                         </div>
                         <!-- Menu Area Start -->
                         <nav class="navbar navbar-expand-lg">
@@ -379,22 +364,22 @@
                             <div class="collapse navbar-collapse justify-content-center" id="yummyfood-footer-nav">
                                 <ul class="navbar-nav">
                                     <li class="nav-item active">
-                                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                                        <a class="nav-link" href="#">MY FRIDGE<span class="sr-only">(current)</span></a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Features</a>
+                                        <a class="nav-link" href="#">ABOUT US</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Categories</a>
+                                        <a class="nav-link" href="#">RECIPE</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="mypage_main.html">마이페이지</a>
+                                        <a class="nav-link" href="#">RESTAURANT</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">About</a>
+                                        <a class="nav-link" href="#">MY PAGE</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Contact</a>
+                                        <a class="nav-link" href="#">MANAGE</a>
                                     </li>
                                 </ul>
                             </div>
