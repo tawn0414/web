@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,11 +21,15 @@
 
     <!-- Responsive CSS -->
     <link href="css/responsive/responsive.css" rel="stylesheet">
-
+	<script type="text/javascript">
+		function popup() {
+			pop = window.open('search.jsp', 'search','width=400,height=400,location=no,status=no,scrollbars=yes');
+		}
+	</script>
 </head>
 
 <body>
- <!-- Preloader Start -->
+<!-- Preloader Start -->
     <div id="preloader">
         <div class="yummy-load"></div>
     </div>
@@ -92,7 +98,7 @@
                                     <a class="nav-link" href="index.html">MY FRIDGE<span class="sr-only">(current)</span></a>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="yummyDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ABOUT US</a>
+                                    <a class="nav-link dropdown-toggle" href="mypage_main.jsp" id="yummyDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ABOUT US</a>
                                     <div class="dropdown-menu" aria-labelledby="yummyDropdown">
                                         <a class="dropdown-item" href="index.html"></a>
                                         <a class="dropdown-item" href="archive.html">INTRO</a>
@@ -108,14 +114,13 @@
                                     <a class="nav-link" href="#">RESTAURANT</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="mypage_main.html">MY PAGE</a>
-                                    <div class="dropdown-menu" aria-labelledby="yummyDropdown">
-                                        <a class="dropdown-item" href="recipe_favorite.html">Ï¶êÍ≤®Ï∞æÎäî</a>
-                                        <a class="dropdown-item" href="mypoint.html">ÎÇòÏùò Ìè¨Ïù∏Ìä∏</a>
-                                        <a class="dropdown-item" href="information_update.html">ÎÇòÏùò Ï†ïÎ≥¥ ÏàòÏ†ï</a>
-                                        <a class="dropdown-item" href="ask.html">1:1 Î¨∏ÏùòÏÇ¨Ìï≠</a>
-                                    </div>
-                                    
+                                    <a class="nav-link dropdown-toggle" href="mypage_main.jsp" id="yummyDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">MY PAGE</a>
+                                    <ul class="dropdown-menu" aria-labelledby="yummyDropdown">
+                                        <li><a class="dropdown-item" href="recipe_favorite.jsp">¡Ò∞‹√£¥¬</a></li>
+                                        <li><a class="dropdown-item" href="mypoint.jsp">≥™¿« ∆˜¿Œ∆Æ</a></li>
+                                        <li><a class="dropdown-item" href="information_update.jsp">≥™¿« ¡§∫∏ ºˆ¡§</a></li>
+                                        <li><a class="dropdown-item" href="ask.jsp">1:1 πÆ¿«ªÁ«◊</a></li>
+                                    </ul>                             
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#">MANAGE</a>
@@ -135,7 +140,7 @@
             <div class="row h-100 align-items-center">
                 <div class="col-12">
                     <div class="bradcumb-title text-center">
-                        <h2>My Point</h2>
+                        <h2>MyPage</h2>
                     </div>
                 </div>
             </div>
@@ -149,7 +154,6 @@
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="#"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
                             <li class="breadcrumb-item active" aria-current="page">MyPage</li>
-                            <li class="breadcrumb-item active" aria-current="page">My Point</li>
                         </ol>
                     </nav>
                 </div>
@@ -158,72 +162,92 @@
     </div>
     <!-- ****** Breadcumb Area End ****** -->
 
-	<!-- my point area start -->
-	<div id="mypoint">
-	<div>
-		<div class="title">
-			<h2>Ìè¨Ïù∏Ìä∏ Ï†ÅÎ¶Ω ÏÉÅÏÑ∏ ÎÇ¥Ïö©</h2>
+	<!-- mypage main area start -->
+		<div class="mypage_main">
+			<div class="mypage_one">
+				<span style="float: left;">¡Ò∞‹√£¥¬ ∑πΩ√««:<strong>10</strong><span>∞≥</span></span>
+	
+				<span style="float: right;">point:<strong>50</strong><span>¡°</span></span>
+
+			</div>
+			<p></p>
+			<div>
+				<table border="1" class="mypage_table">
+					<tr align="center">
+						<td></td>
+						<td>¿œø‰¿œ</td>
+						<td>ø˘ø‰¿œ</td>
+						<td>»≠ø‰¿œ</td>
+						<td>ºˆø‰¿œ</td>
+						<td>∏Òø‰¿œ</td>
+						<td>±›ø‰¿œ</td>
+						<td>≈‰ø‰¿œ</td>
+					</tr>
+					<tr align="center">
+						<td scope="row">æ∆ƒß</td>
+						<td class="search" onclick="popup()">±Ëƒ°</td>
+						<td class="search" onclick="popup()"></td>
+						<td class="search" onclick="popup()"></td>
+						<td class="search" onclick="popup()"></td>
+						<td class="search" onclick="popup()"></td>
+						<td class="search" onclick="popup()"></td>
+						<td class="search" onclick="popup()"></td>
+					</tr>
+					<tr align="center">
+						<td scope="row">¡°Ω…</td>
+						<td class="search" onclick="popup()"></td>
+						<td class="search" onclick="popup()"></td>
+						<td class="search" onclick="popup()"></td>
+						<td class="search" onclick="popup()">ƒ·¿Â</td>
+						<td class="search" onclick="popup()"></td>
+						<td class="search" onclick="popup()"></td>
+						<td class="search" onclick="popup()"></td>
+					</tr>
+					<tr align="center">
+						<td scope="row">¿˙≥·</td>
+						<td class="search" onclick="popup()"></td>
+						<td class="search" onclick="popup()"></td>
+						<td class="search" onclick="popup()"></td>
+						<td class="search" onclick="popup()"></td>
+						<td class="search" onclick="popup()"></td>
+						<td class="search" onclick="popup()"></td>
+						<td class="search" onclick="popup()">∂Û∏È</td>
+					</tr>
+				</table>
+			</div>
+		<div style="float: right">
+			<input type="button" value="ø˘ ¿¸√º∫∏±‚" onclick="window.open('calander.jsp', 'calender','width=850,height=530,location=no,status=no,scrollbars=yes')" style="color:white; background-color: #fc6c3f; width: 100px"/>
 		</div>
-		<fieldset>
-			<legend>Ìè¨Ïù∏Ìä∏</legend>
-			<div class="">
-				<div class="">
-					<span>ÎÇ¥ Ìè¨Ïù∏Ìä∏</span>
-					<strong>10</strong>
-					<span>Ï†ê</span>
-					<span>‚ìò</span>
-					<span class=""><a href="">Ï†ÅÎ¶ΩÏ°∞Í±¥</a></span>
-					<button class="" type="submit">
-						<span class="">
-							<i class="">Ìè¨Ïù∏Ìä∏ Ï†ÑÌôò</i>
-						</span>
-					</button>
+		<p></p>
+		
+		
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3">ø¿¥√ º∑√Î«— ƒÆ∑Œ∏Æ</div>
+				<div class="col-lg-4">
+					<input type="text" value=""/>
+				</div>
+				<div class="col-lg-2">
+					<input type = "button" id="towrite" value="∞ËªÍ«œ±‚" onclick="" style="color:white; background-color: #fc6c3f; width: 100px;">	
 				</div>
 			</div>
-		</fieldset>
-	</div>
-	
-	<div class="board_list">
-			<table style="margin-left: auto; margin-right: auto; border: 1 solid black">
-				<thead>
-				<tr>
-					<th>No</th>
-					<th>Ï†ÅÎ¶ΩÎÇ¥Ïö©</th>
-					<th>Ï†ÅÎ¶Ω Ìè¨Ïù∏Ìä∏</th>
-					<th>Ï†ÅÎ¶ΩÎÇ†Ïßú</th>
-				</tr>
-				</thead>
-				<tbody>
-				<tr>
-					<td>1</td>
-					<td>Ï†ÅÎ¶ΩÏù¥Ïú†</td>
-					<td>50</td>
-					<td>2020-01-14</td>
-				</tr>
-				</tbody>
-			</table>
+			<div class="row">
+				<div class="col-lg-3" style="text-align: center;">∞»±‚</div>
+				<div class="col-lg-1" style="text-align: center;"><span>50</span>∫–</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-3" style="text-align: center;">∂Ÿ±‚</div>
+				<div class="col-lg-1" style="text-align: center;"><span>20</span>∫–</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-3" style="text-align: center;">¿⁄¿¸∞≈</div>
+				<div class="col-lg-1" style="text-align: center;"><span>30</span>∫–</div>
+			</div>
 		</div>
-		<div>                    
-				<div class="pagination-area d-sm-flex mt-15">
-                        <nav aria-label="#">
-                            <ul class="pagination">
-                                <li class="page-item active">
-                                    <a class="page-link" href="#">1 <span class="sr-only">(current)</span></a>
-                                </li>
-                                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                <li class="page-item"><a class="page-link" href="#">4</a></li>
-                                <li class="page-item"><a class="page-link" href="#">5</a></li>
-                                <li class="page-item">
-                                    <a class="page-link" href="#">Next <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
-                                </li>
-                            </ul>
-                        </nav>
-            	 </div>
-             </div>
 	</div>
 	<p></p>
-	<!-- my point area end -->
+	<!-- mypage main area end -->
+
 
     <!-- ****** Instagram Area Start ****** -->
     <div class="instargram_area owl-carousel section_padding_100_0 clearfix" id="portfolio">
@@ -422,7 +446,7 @@
                                         <a class="nav-link" href="#">RESTAURANT</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">MY PAGE</a>
+                                        <a class="nav-link" href="mypage_main.jsp">MY PAGE</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="#">MANAGE</a>

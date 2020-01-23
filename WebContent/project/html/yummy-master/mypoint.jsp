@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -23,7 +25,7 @@
 </head>
 
 <body>
-    <!-- Preloader Start -->
+ <!-- Preloader Start -->
     <div id="preloader">
         <div class="yummy-load"></div>
     </div>
@@ -108,12 +110,12 @@
                                     <a class="nav-link" href="#">RESTAURANT</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="mypage_main.html">MY PAGE</a>
+                                    <a class="nav-link" href="mypage_main.jsp">MY PAGE</a>
                                     <div class="dropdown-menu" aria-labelledby="yummyDropdown">
-                                        <a class="dropdown-item" href="recipe_favorite.html">Ï¶êÍ≤®Ï∞æÎäî</a>
-                                        <a class="dropdown-item" href="mypoint.html">ÎÇòÏùò Ìè¨Ïù∏Ìä∏</a>
-                                        <a class="dropdown-item" href="information_update.html">ÎÇòÏùò Ï†ïÎ≥¥ ÏàòÏ†ï</a>
-                                        <a class="dropdown-item" href="ask.html">1:1 Î¨∏ÏùòÏÇ¨Ìï≠</a>
+                                        <a class="dropdown-item" href="recipe_favorite.jsp">¡Ò∞‹√£¥¬</a>
+                                        <a class="dropdown-item" href="mypoint.jsp">≥™¿« ∆˜¿Œ∆Æ</a>
+                                        <a class="dropdown-item" href="information_update.jsp">≥™¿« ¡§∫∏ ºˆ¡§</a>
+                                        <a class="dropdown-item" href="ask.jsp">1:1 πÆ¿«ªÁ«◊</a>
                                     </div>
                                     
                                 </li>
@@ -130,12 +132,12 @@
     <!-- ****** Header Area End ****** -->
 
     <!-- ****** Breadcumb Area Start ****** -->
-    <div class="breadcumb-area" style="background-image: url(img/bg-img/breadcumb.jpg); z-index: 0">
+    <div class="breadcumb-area" style="background-image: url(img/bg-img/breadcumb.jpg);z-index: 0">
         <div class="container h-100">
             <div class="row h-100 align-items-center">
                 <div class="col-12">
                     <div class="bradcumb-title text-center">
-                        <h2>1:1 Î¨∏ÏùòÏÇ¨Ìï≠</h2>
+                        <h2>My Point</h2>
                     </div>
                 </div>
             </div>
@@ -149,7 +151,7 @@
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="#"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
                             <li class="breadcrumb-item active" aria-current="page">MyPage</li>
-                            <li class="breadcrumb-item active" aria-current="page">1:1 Î¨∏ÏùòÏÇ¨Ìï≠</li>
+                            <li class="breadcrumb-item active" aria-current="page">My Point</li>
                         </ol>
                     </nav>
                 </div>
@@ -157,57 +159,51 @@
         </div>
     </div>
     <!-- ****** Breadcumb Area End ****** -->
-	
-	<!-- 1:1 ask area start -->
-    <div id="ask">
-    <div>
-		<fieldset style="text-align: center;">
-			<legend>Í≤åÏãúÍ∏Ä Í≤ÄÏÉâ</legend>
+
+	<!-- my point area start -->
+	<div style="width: 400px; margin-left: auto; margin-right: auto;">
+	<div style="text-align:center; margin-left: auto; margin-right: auto;">
+		<div class="title">
+			<h2>∆˜¿Œ∆Æ ¿˚∏≥ ªÛºº ≥ªøÎ</h2>
+		</div>
+		<fieldset>
 			<div class="">
 				<div class="">
-					<span>Ï†ÑÏ≤¥</span>
-					<strong>1</strong>
-					<span>Í±¥</span>
-				</div>
-				<div class="">
-					<div class=""> 
-						<select>
-							<option value="title" selected="selected">Ï†úÎ™©</option>
-							<option value="title">Îì±Î°ù ÏùºÏûê</option>
-						</select>&nbsp;
-							<span >
-								<input class="" id="" type="text" value="" />
-									<span class="">
-										<input type = "button" id="towrite" value="Í≤ÄÏÉâ" onclick="" style="color:white; background-color: #fc6c3f; width: 100px;">	
-									</span>
-									<span class="write">
-										<input type = "button" id="towrite" value="Í∏ÄÏì∞Í∏∞" onclick="location.href='ask_write.html'" style="color:white; background-color: #fc6c3f; width: 100px;">
-									</span>
-							</span>
-					</div>
+					<span>≥ª ∆˜¿Œ∆Æ</span>
+					<strong>10</strong>
+					<span>¡°</span>
+					<span>®’</span>
+					<span class=""><a href="">¿˚∏≥¡∂∞«</a></span>
+					<span class="">
+						<input type = "button" id="towrite" value="∆˜¿Œ∆Æ ¿¸»Ø" onclick="" style="color:white; background-color: #fc6c3f; width: 100px;">	
+					</span>
 				</div>
 			</div>
 		</fieldset>
-		<p></p>
 	</div>
-		<div>
-			<table id ="table_boardlist" border="1" style="width: 800px; height: 100px; text-align: center;margin-left: auto; margin-right: auto;">
-				<tr style="font-weight: bold;">
-					<td scope="col">No</td>
-					<td scope="col">Ï†úÎ™©</td>
-					<td scope="col">Îì±Î°ùÏùºÏûê</td>
-					<td scope="col">ÎãµÎ≥ÄÏÉÅÌÉú</td>
-				</tr>
-				<tr>
-					<td>1</td>
-					<td><a href="ask_title.html">Ï†úÎ™©Ïù¥ Î≠òÍπå</a></td>
-					<td>2020-01-14</td>
-					<td>ÎãµÎ≥Ä ÎåÄÍ∏∞Ï§ë</td>
-				</tr>
-			</table>
-		</div>
-			<div>                    
-				<div class="pagination-area d-sm-flex mt-15">
+	<p></p>
+		<table border="1" style="margin-left: auto; margin-right: auto; width: 500px">
+			<tr style="text-align: center; font-weight: bold;">
+				<td>No</td>
+				<td>¿˚∏≥≥ªøÎ</td>
+				<td>¿˚∏≥ ∆˜¿Œ∆Æ</td>
+				<td>¿˚∏≥≥Ø¬•</td>
+			</tr>
+			<tr style="text-align: center;">
+				<td>1</td>
+				<td>asfsdfasfsdfasfsdfasfsdf</td>
+				<td>50</td>
+				<td>2020-01-14</td>
+			</tr>
+			<tr style="text-align: center;">
+				<td>2</td>
+				<td>asfsdfasfsdfasfsdfasfsdf</td>
+				<td>10</td>
+				<td>2020-01-16</td>
+			</tr>
+		</table>
+		<div>                    
+				<div class="pagination-area d-sm-flex mt-15" style="width: 280px; margin-left: auto; margin-right: auto;">
                         <nav aria-label="#">
                             <ul class="pagination">
                                 <li class="page-item active">
@@ -226,9 +222,8 @@
              </div>
 	</div>
 	<p></p>
-	<!-- 1:1 ask area end -->
-    
-    
+	<!-- my point area end -->
+
     <!-- ****** Instagram Area Start ****** -->
     <div class="instargram_area owl-carousel section_padding_100_0 clearfix" id="portfolio">
 
@@ -426,7 +421,7 @@
                                         <a class="nav-link" href="#">RESTAURANT</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">MY PAGE</a>
+                                        <a class="nav-link" href="mypage_main.jsp">MY PAGE</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="#">MANAGE</a>

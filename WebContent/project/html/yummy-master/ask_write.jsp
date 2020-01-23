@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -108,12 +110,12 @@
                                     <a class="nav-link" href="#">RESTAURANT</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="mypage_main.html">MY PAGE</a>
+                                    <a class="nav-link" href="mypage_main.jsp">MY PAGE</a>
                                     <div class="dropdown-menu" aria-labelledby="yummyDropdown">
-                                        <a class="dropdown-item" href="recipe_favorite.html">Ï¶êÍ≤®Ï∞æÎäî</a>
-                                        <a class="dropdown-item" href="mypoint.html">ÎÇòÏùò Ìè¨Ïù∏Ìä∏</a>
-                                        <a class="dropdown-item" href="information_update.html">ÎÇòÏùò Ï†ïÎ≥¥ ÏàòÏ†ï</a>
-                                        <a class="dropdown-item" href="ask.html">1:1 Î¨∏ÏùòÏÇ¨Ìï≠</a>
+                                        <a class="dropdown-item" href="recipe_favorite.jsp">¡Ò∞‹√£¥¬</a>
+                                        <a class="dropdown-item" href="mypoint.jsp">≥™¿« ∆˜¿Œ∆Æ</a>
+                                        <a class="dropdown-item" href="information_update.jsp">≥™¿« ¡§∫∏ ºˆ¡§</a>
+                                        <a class="dropdown-item" href="ask.jsp">1:1 πÆ¿«ªÁ«◊</a>
                                     </div>
                                     
                                 </li>
@@ -135,7 +137,7 @@
             <div class="row h-100 align-items-center">
                 <div class="col-12">
                     <div class="bradcumb-title text-center">
-                        <h2>1:1 Î¨∏ÏùòÏÇ¨Ìï≠</h2>
+                        <h2>1:1 πÆ¿«ªÁ«◊</h2>
                     </div>
                 </div>
             </div>
@@ -149,8 +151,8 @@
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="#"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
                             <li class="breadcrumb-item active" aria-current="page">MyPage</li>
-                            <li class="breadcrumb-item active" aria-current="page">1:1 Î¨∏ÏùòÏÇ¨Ìï≠</li>
-                            <li class="breadcrumb-item active" aria-current="page">Í∏ÄÏì∞Í∏∞</li>
+                            <li class="breadcrumb-item active" aria-current="page">1:1 πÆ¿«ªÁ«◊</li>
+                            <li class="breadcrumb-item active" aria-current="page">±€æ≤±‚</li>
                         </ol>
                     </nav>
                 </div>
@@ -160,36 +162,34 @@
     <!-- ****** Breadcumb Area End ****** -->
 	
 	<!-- 1:1 ask write area start -->
-   <div style="text-align: center;">
+   <div>
 		<fieldset>
 			<div>
-				<div class="mypage_info_texts">
-					<span>Ïù¥Î¶Ñ&nbsp;&nbsp;&nbsp;</span><input name="id" class="" type="text" disabled="disabled" placeholder="ÏïÑÏù¥Îîî"/>
+				<div class="mypage_info_texts" style="width: 420px; margin-left: auto; margin-right: auto;">
+					<span>¿Ã∏ß</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<input name="id" class="" type="text" disabled="disabled" placeholder="æ∆¿Ãµ"/>
 				</div>
-				<div>
-					<span>Ï†úÎ™©</span>
+				<div style="width: 420px; margin-left: auto; margin-right: auto;">
+					<span>¡¶∏Ò</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 					<span>
-						<input name="title" title="Ï†úÎ™©" class="" placeholder="Ï†úÎ™©ÏùÑ ÏûÖÎ†•Ìï¥ Ï£ºÏÑ∏Ïöî." value=""/>
+						<input name="title" title="¡¶∏Ò" class="" placeholder="¡¶∏Ò¿ª ¿‘∑¬«ÿ ¡÷ººø‰." value=""/>
 					</span>
 				</div>
-				<div>
-					<span>Ï≤®Î∂ÄÌïòÍ∏∞</span>
+				<div style="width: 420px; margin-left: auto; margin-right: auto;">
+					<span>√∑∫Œ«œ±‚</span>&nbsp;
 					<span>
-						<button title="ÌååÏùº Ï≤®Î∂ÄÌïòÍ∏∞" type="button">
-							<span>ÌååÏùº</span>
-						</button>
+						<input type="button" value="∆ƒ¿œ √∑∫Œ«œ±‚" onclick="" style="color:white; background-color: #fc6c3f; width: 150px"/>
 					</span>
 				</div>
 				<p></p>
-				<div>
+				<div style="width: 420px; margin-left: auto; margin-right: auto;">
 					<textarea rows="10" cols="50"></textarea>
 				</div>
 			</div>
 		</fieldset>
-		<div>
-			<input type="button" value="ÏûëÏÑ± ÏôÑÎ£å" onclick="location.href='ask.html'"/>
-			<input type="button" value="ÏûëÏÑ± Ï∑®ÏÜå" onclick="location.href='ask.html'"/>
-		
+		<div style="width: 210px; margin-left: auto; margin-right: auto;">
+			<input type="button" value="¿€º∫ øœ∑·" onclick="alert('¿€º∫¿ª øœ∑·«ﬂΩ¿¥œ¥Ÿ.'); location.href='ask.jsp'" style="color:white; background-color: #fc6c3f; width: 100px"/>
+			<input type="button" value="¿€º∫ √Îº“" onclick="alert('¿€º∫¿ª √Îº“«ﬂΩ¿¥œ¥Ÿ.'); location.href='ask.jsp'" style="color:white; background-color: #fc6c3f; width: 100px"/>
 		</div>
 	</div>
 	<p></p>
@@ -394,7 +394,7 @@
                                         <a class="nav-link" href="#">RESTAURANT</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">MY PAGE</a>
+                                        <a class="nav-link" href="mypage_main.jsp">MY PAGE</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="#">MANAGE</a>

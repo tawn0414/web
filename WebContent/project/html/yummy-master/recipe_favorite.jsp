@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -20,6 +22,11 @@
     <!-- Responsive CSS -->
     <link href="css/responsive/responsive.css" rel="stylesheet">
 
+	<script type="text/javascript">
+	function popup() {
+		pop = window.open('search.jsp', 'search','width=400,height=400,location=no,status=no,scrollbars=yes');
+	}
+	</script>
 </head>
 
 <body>
@@ -108,12 +115,12 @@
                                     <a class="nav-link" href="#">RESTAURANT</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="mypage_main.html">MY PAGE</a>
+                                    <a class="nav-link" href="mypage_main.jsp">MY PAGE</a>
                                     <div class="dropdown-menu" aria-labelledby="yummyDropdown">
-                                        <a class="dropdown-item" href="recipe_favorite.html">Ï¶êÍ≤®Ï∞æÎäî</a>
-                                        <a class="dropdown-item" href="mypoint.html">ÎÇòÏùò Ìè¨Ïù∏Ìä∏</a>
-                                        <a class="dropdown-item" href="information_update.html">ÎÇòÏùò Ï†ïÎ≥¥ ÏàòÏ†ï</a>
-                                        <a class="dropdown-item" href="ask.html">1:1 Î¨∏ÏùòÏÇ¨Ìï≠</a>
+                                        <a class="dropdown-item" href="recipe_favorite.jsp">¡Ò∞‹√£¥¬</a>
+                                        <a class="dropdown-item" href="mypoint.jsp">≥™¿« ∆˜¿Œ∆Æ</a>
+                                        <a class="dropdown-item" href="information_update.jsp">≥™¿« ¡§∫∏ ºˆ¡§</a>
+                                        <a class="dropdown-item" href="ask.jsp">1:1 πÆ¿«ªÁ«◊</a>
                                     </div>
                                     
                                 </li>
@@ -159,7 +166,15 @@
     <!-- ****** Breadcumb Area End ****** -->
 
     <!-- ****** Archive Area Start ****** -->
-    <section class="archive-area section_padding_80">
+    
+    <section class="archive-area section_padding_80" style="width: 80%; margin-left: auto; margin-right: auto;">
+    	<div style="width: 520px; margin-left: auto; margin-right: auto;">
+    		<input type="text" placeholder="∑πΩ√««∏¶ ∞Àªˆ«œººø‰"/>
+    		<input type="button" value="∞Àªˆ" style="color:white; background-color: #fc6c3f; width: 100px;" onclick="popup()"/>
+			<input type="button" value="∑πΩ√«« √ﬂ∞°" onclick="alert('∑πΩ√««∞° √ﬂ∞°µ«æ˙Ω¿¥œ¥Ÿ.');" style="color:white; background-color: #fc6c3f; width: 100px;"/>
+			<input type="button" value="∑πΩ√«« ªË¡¶" onclick="alert('∑πΩ√««∞° ªË¡¶µ«æ˙Ω¿¥œ¥Ÿ.');" style="color:white; background-color: #fc6c3f; width: 100px;"/>
+		</div>
+		<p></p>
         <div class="container">
             <div class="row">
 
@@ -772,7 +787,7 @@
                                         <a class="nav-link" href="#">RESTAURANT</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">MY PAGE</a>
+                                        <a class="nav-link" href="mypage_main.jsp">MY PAGE</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="#">MANAGE</a>

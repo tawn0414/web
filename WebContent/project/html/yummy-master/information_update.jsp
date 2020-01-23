@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -23,7 +25,7 @@
 </head>
 
 <body>
-    <!-- Preloader Start -->
+ <!-- Preloader Start -->
     <div id="preloader">
         <div class="yummy-load"></div>
     </div>
@@ -108,12 +110,12 @@
                                     <a class="nav-link" href="#">RESTAURANT</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="mypage_main.html">MY PAGE</a>
+                                    <a class="nav-link" href="mypage_main.jsp">MY PAGE</a>
                                     <div class="dropdown-menu" aria-labelledby="yummyDropdown">
-                                        <a class="dropdown-item" href="recipe_favorite.html">Ï¶êÍ≤®Ï∞æÎäî</a>
-                                        <a class="dropdown-item" href="mypoint.html">ÎÇòÏùò Ìè¨Ïù∏Ìä∏</a>
-                                        <a class="dropdown-item" href="information_update.html">ÎÇòÏùò Ï†ïÎ≥¥ ÏàòÏ†ï</a>
-                                        <a class="dropdown-item" href="ask.html">1:1 Î¨∏ÏùòÏÇ¨Ìï≠</a>
+                                        <a class="dropdown-item" href="recipe_favorite.jsp">¡Ò∞‹√£¥¬</a>
+                                        <a class="dropdown-item" href="mypoint.jsp">≥™¿« ∆˜¿Œ∆Æ</a>
+                                        <a class="dropdown-item" href="information_update.jsp">≥™¿« ¡§∫∏ ºˆ¡§</a>
+                                        <a class="dropdown-item" href="ask.jsp">1:1 πÆ¿«ªÁ«◊</a>
                                     </div>
                                     
                                 </li>
@@ -135,7 +137,7 @@
             <div class="row h-100 align-items-center">
                 <div class="col-12">
                     <div class="bradcumb-title text-center">
-                        <h2>1:1 Î¨∏ÏùòÏÇ¨Ìï≠</h2>
+                        <h2>¡§∫∏ºˆ¡§</h2>
                     </div>
                 </div>
             </div>
@@ -149,8 +151,7 @@
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="#"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
                             <li class="breadcrumb-item active" aria-current="page">MyPage</li>
-                            <li class="breadcrumb-item active" aria-current="page">1:1 Î¨∏ÏùòÏÇ¨Ìï≠</li>
-                            <li class="breadcrumb-item active" aria-current="page">Î¨∏ÏùòÏÇ¨Ìï≠ ÌôïÏù∏</li>
+                            <li class="breadcrumb-item active" aria-current="page">≥™¿« ¡§∫∏ºˆ¡§</li>
                         </ol>
                     </nav>
                 </div>
@@ -158,171 +159,159 @@
         </div>
     </div>
     <!-- ****** Breadcumb Area End ****** -->
-<div id="ask_title">
-	<div>
-		<table border="1" style="width: 800px; height: 200px; text-align: center; margin-left: auto; margin-right: auto;">
-			<tr>
-				<td style="font-weight: bold;">Ï†úÎ™©</td>
-				<td>Î¨ºÏñ¥Î≥ºÍ∫º ÏûàÏñ¥Ïöî</td>
-			</tr>
-			<tr>
-				<td style="font-weight: bold;">ÏûëÏÑ±Ïùº</td>
-				<td>2020-01-15</td>
-			</tr>
-			<tr>
-				<td style="font-weight: bold;">content</td>
-				<td>~~~~~~~~~~~~~~~~~~~~~~~~~</td>
-			</tr>
-			<tr>
-				<td style="font-weight: bold;">reply</td>
-				<td>ÎÑ§~~~~~~~~~~~~~~~~~~~~</td>
-			</tr>
-			
-		</table>
-	</div>
-		<div id ="back">
-			<input type = "button" id="backtolist" value="Î™©Î°ùÏúºÎ°ú" onclick="location.href='ask.html'">
+	
+	<!-- information_update area start -->
+	<div style="margin-left: auto; margin-right: auto; width: 60%; position: relative; left: 20%">
+			<fieldset >
+				<div class="">
+					<div class="">
+						<div class="">
+							<div class="">
+								
+								<div class="mypage_info_texts">
+									<input name="id" class="" type="text" disabled="disabled" placeholder="æ∆¿Ãµ"/>
+								</div>
+							</div>
+							<p class="" style="display: none;"></p>
+						</div>
+						<div class="">
+							<div class="">
+								
+								<div class="mypage_info_texts">
+									<input name="" class="" type="password" placeholder="∫Òπ–π¯»£">
+									<span class="" style="display: none;"></span>
+								</div>
+							</div>
+							<p class="" style="display: none;"></p>
+						</div>
+						<div class="">
+							<div class="">
+								
+								<div class="mypage_info_texts">
+									<input name="" class="" type="password" placeholder="∫Òπ–π¯»£ »Æ¿Œ"/>
+									<span class=""></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="">
+					<div class="">
+						<div class="">
+							<div class="">
+								
+								<div class="mypage_info_texts">
+									<input name="" class="" type="text" disabled="disabled" placeholder="¿Ã∏ß"/>
+								</div>
+							</div>
+						</div>
+						<div class="mypage_info_texts">
+							<div class="">
+								<div class="year">
+									<div class="">
+										
+										<div>
+											<span class="">
+												<input name="" class="" type="text" maxlength="6" disabled="disabled" placeholder="¡÷πŒπ¯»£ æ’¿⁄∏Æ"/>
+											</span>
+											<span>-</span>
+											<span>
+												<input name="" class="" type="text" maxlength="7" disabled="disabled" placeholder="¡÷πŒπ¯»£ µﬁ¿⁄∏Æ"/>
+											</span>
+										</div>
+									</div>
+								</div>
+								<p></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="">
+					<div class="">
+						<input name="gender" class="" type="radio" value="male"/>
+						<label>≥≤¿⁄</label>
+					</div>
+					<div class="">
+						<input name="gender" class="" type="radio" value="female"/>
+						<label>ø©¿⁄</label>
+					</div>
+					<p></p>
+				</div>
+				<p class="" style="display: none;">« ºˆ¡§∫∏¿‘¥œ¥Ÿ.</p>
+				<div class="">
+					<div class="">
+						<div class="">
+							<div class="mypage_info_texts">
+								
+								<div class="">
+									<span class="">
+										<select name="selectPhone" title="»ﬁ¥Î∆˘ æ’ 3¿⁄∏Æ" class="">
+											<option value="010">010</option>
+											<option value="011">011</option>
+											<option value="016">016</option>
+											<option value="017">017</option>
+											<option value="018">018</option>
+											<option value="019">019</option>
+										</select>
+									</span>
+									<span class="num">
+										<input name="inputPhone" class="" type="tel" maxlength="8" placeholder="»ﬁ¥Î∆˘ π¯»£ (º˝¿⁄∏∏)"/>
+									</span>
+								</div>
+							</div>
+							<p class="" style="display: none;"></p>
+						</div>
+						<div class="mypage_info_texts">
+							<div class="">
+								<div class="">
+									<div class="">
+										
+									</div>
+									<span class="">
+										<input name="" class="" type="text" placeholder="¿Ã∏ﬁ¿œ"/>
+									</span>
+									<span class="">@</span>
+									<span class="">
+										<input name="" class="" type="text" placeholder="¡˜¡¢¿‘∑¬"/>
+									</span>
+									<select name="selectEmail" title="" class="">
+										<option value="naver.com">naver.com</option>
+										<option value="hanmail.net">hanmail.net</option>
+										<option value="nate.com">nate.com</option>
+										<option value="google.com">google.com</option>
+									</select>
+									
+								</div>
+							</div>
+						</div>
+						<div class="mypage_info_texts">
+							<div class="">
+								
+								<div class="">
+									<input name="inputHeight" class="" type="text" maxlength="3" placeholder="≈∞(cm)"/>
+								</div>
+							</div>
+						</div>
+						<div class="mypage_info_texts">
+							<div class="">
+								
+								<div class="">
+									<input name="inputWeight" class="" type="text" maxlength="3" placeholder="∏ˆπ´∞‘(kg)"/>
+								</div>
+							</div>
+						</div>
+						<p></p>
+						<div>
+							<input type="button" value="ºˆ¡§ øœ∑·" onclick="alert('ºˆ¡§¿ª øœ∑·«ﬂΩ¿¥œ¥Ÿ.');location.href='mypage_main.jsp'" style="color:white; background-color: #fc6c3f; width: 100px"/>
+							<input type="button" value="ºˆ¡§ √Îº“" onclick="alert('ºˆ¡§¿ª √Îº“«ﬂΩ¿¥œ¥Ÿ.');location.href='mypage_main.jsp'" style="color:white; background-color: #fc6c3f; width: 100px"/>
+						</div>
+					</div>
+				</div>
+			</fieldset>
 		</div>
-	</div>
-	<!-- 1:1 ask_title area start -->
+	<!-- information_update area end -->
+	
     
-	<!-- 1:1 ask title area end -->
-    
-    
-
-    <!-- ****** Instagram Area Start ****** -->
-    <div class="instargram_area owl-carousel section_padding_100_0 clearfix" id="portfolio">
-
-        <!-- Instagram Item -->
-        <div class="instagram_gallery_item">
-            <!-- Instagram Thumb -->
-            <img src="img/instagram-img/1.jpg" alt="">
-            <!-- Hover -->
-            <div class="hover_overlay">
-                <div class="yummy-table">
-                    <div class="yummy-table-cell">
-                        <div class="follow-me text-center">
-                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i> Follow me</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Instagram Item -->
-        <div class="instagram_gallery_item">
-            <!-- Instagram Thumb -->
-            <img src="img/instagram-img/2.jpg" alt="">
-            <!-- Hover -->
-            <div class="hover_overlay">
-                <div class="yummy-table">
-                    <div class="yummy-table-cell">
-                        <div class="follow-me text-center">
-                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i> Follow me</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Instagram Item -->
-        <div class="instagram_gallery_item">
-            <!-- Instagram Thumb -->
-            <img src="img/instagram-img/3.jpg" alt="">
-            <!-- Hover -->
-            <div class="hover_overlay">
-                <div class="yummy-table">
-                    <div class="yummy-table-cell">
-                        <div class="follow-me text-center">
-                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i> Follow me</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Instagram Item -->
-        <div class="instagram_gallery_item">
-            <!-- Instagram Thumb -->
-            <img src="img/instagram-img/4.jpg" alt="">
-            <!-- Hover -->
-            <div class="hover_overlay">
-                <div class="yummy-table">
-                    <div class="yummy-table-cell">
-                        <div class="follow-me text-center">
-                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i> Follow me</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Instagram Item -->
-        <div class="instagram_gallery_item">
-            <!-- Instagram Thumb -->
-            <img src="img/instagram-img/5.jpg" alt="">
-            <!-- Hover -->
-            <div class="hover_overlay">
-                <div class="yummy-table">
-                    <div class="yummy-table-cell">
-                        <div class="follow-me text-center">
-                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i> Follow me</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Instagram Item -->
-        <div class="instagram_gallery_item">
-            <!-- Instagram Thumb -->
-            <img src="img/instagram-img/6.jpg" alt="">
-            <!-- Hover -->
-            <div class="hover_overlay">
-                <div class="yummy-table">
-                    <div class="yummy-table-cell">
-                        <div class="follow-me text-center">
-                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i> Follow me</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Instagram Item -->
-        <div class="instagram_gallery_item">
-            <!-- Instagram Thumb -->
-            <img src="img/instagram-img/1.jpg" alt="">
-            <!-- Hover -->
-            <div class="hover_overlay">
-                <div class="yummy-table">
-                    <div class="yummy-table-cell">
-                        <div class="follow-me text-center">
-                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i> Follow me</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Instagram Item -->
-        <div class="instagram_gallery_item">
-            <!-- Instagram Thumb -->
-            <img src="img/instagram-img/2.jpg" alt="">
-            <!-- Hover -->
-            <div class="hover_overlay">
-                <div class="yummy-table">
-                    <div class="yummy-table-cell">
-                        <div class="follow-me text-center">
-                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i> Follow me</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-    <!-- ****** Our Creative Portfolio Area End ****** -->
 
     <!-- ****** Footer Social Icon Area Start ****** -->
     <div class="social_icon_area clearfix">
@@ -387,7 +376,7 @@
                                         <a class="nav-link" href="#">RESTAURANT</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">MY PAGE</a>
+                                        <a class="nav-link" href="mypage_main.jsp">MY PAGE</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="#">MANAGE</a>

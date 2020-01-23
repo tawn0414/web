@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -23,7 +25,7 @@
 </head>
 
 <body>
- <!-- Preloader Start -->
+    <!-- Preloader Start -->
     <div id="preloader">
         <div class="yummy-load"></div>
     </div>
@@ -108,12 +110,12 @@
                                     <a class="nav-link" href="#">RESTAURANT</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="mypage_main.html">MY PAGE</a>
+                                    <a class="nav-link" href="mypage_main.jsp">MY PAGE</a>
                                     <div class="dropdown-menu" aria-labelledby="yummyDropdown">
-                                        <a class="dropdown-item" href="recipe_favorite.html">Ï¶êÍ≤®Ï∞æÎäî</a>
-                                        <a class="dropdown-item" href="mypoint.html">ÎÇòÏùò Ìè¨Ïù∏Ìä∏</a>
-                                        <a class="dropdown-item" href="information_update.html">ÎÇòÏùò Ï†ïÎ≥¥ ÏàòÏ†ï</a>
-                                        <a class="dropdown-item" href="ask.html">1:1 Î¨∏ÏùòÏÇ¨Ìï≠</a>
+                                        <a class="dropdown-item" href="recipe_favorite.jsp">¡Ò∞‹√£¥¬</a>
+                                        <a class="dropdown-item" href="mypoint.jsp">≥™¿« ∆˜¿Œ∆Æ</a>
+                                        <a class="dropdown-item" href="information_update.jsp">≥™¿« ¡§∫∏ ºˆ¡§</a>
+                                        <a class="dropdown-item" href="ask.jsp">1:1 πÆ¿«ªÁ«◊</a>
                                     </div>
                                     
                                 </li>
@@ -130,12 +132,12 @@
     <!-- ****** Header Area End ****** -->
 
     <!-- ****** Breadcumb Area Start ****** -->
-    <div class="breadcumb-area" style="background-image: url(img/bg-img/breadcumb.jpg);z-index: 0">
+    <div class="breadcumb-area" style="background-image: url(img/bg-img/breadcumb.jpg); z-index: 0">
         <div class="container h-100">
             <div class="row h-100 align-items-center">
                 <div class="col-12">
                     <div class="bradcumb-title text-center">
-                        <h2>Ï†ïÎ≥¥ÏàòÏ†ï</h2>
+                        <h2>1:1 πÆ¿«ªÁ«◊</h2>
                     </div>
                 </div>
             </div>
@@ -149,7 +151,7 @@
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="#"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
                             <li class="breadcrumb-item active" aria-current="page">MyPage</li>
-                            <li class="breadcrumb-item active" aria-current="page">ÎÇòÏùò Ï†ïÎ≥¥ÏàòÏ†ï</li>
+                            <li class="breadcrumb-item active" aria-current="page">1:1 πÆ¿«ªÁ«◊</li>
                         </ol>
                     </nav>
                 </div>
@@ -158,160 +160,210 @@
     </div>
     <!-- ****** Breadcumb Area End ****** -->
 	
-	<!-- information_update area start -->
-	<div id="information_update">
-		<div class="">
-			<fieldset>
+	<!-- 1:1 ask area start -->
+    <div id="ask">
+    <div>
+		<fieldset style="text-align: center;">
+			<legend>∞‘Ω√±€ ∞Àªˆ</legend>
+			<div class="">
 				<div class="">
-					<div class="">
-						<div class="">
-							<div class="">
-								
-								<div class="mypage_info_texts">
-									<input name="id" class="" type="text" disabled="disabled" placeholder="ÏïÑÏù¥Îîî"/>
-								</div>
-							</div>
-							<p class="" style="display: none;"></p>
-						</div>
-						<div class="">
-							<div class="">
-								
-								<div class="mypage_info_texts">
-									<input name="" class="" type="password" placeholder="ÎπÑÎ∞ÄÎ≤àÌò∏">
-									<span class="" style="display: none;"></span>
-								</div>
-							</div>
-							<p class="" style="display: none;"></p>
-						</div>
-						<div class="">
-							<div class="">
-								
-								<div class="mypage_info_texts">
-									<input name="" class="" type="password" placeholder="ÎπÑÎ∞ÄÎ≤àÌò∏ ÌôïÏù∏"/>
-									<span class=""></span>
-								</div>
-							</div>
-						</div>
-					</div>
+					<span>¿¸√º</span>
+					<strong>1</strong>
+					<span>∞«</span>
 				</div>
 				<div class="">
-					<div class="">
-						<div class="">
-							<div class="">
-								
-								<div class="mypage_info_texts">
-									<input name="" class="" type="text" disabled="disabled" placeholder="Ïù¥Î¶Ñ"/>
-								</div>
-							</div>
-						</div>
-						<div class="mypage_info_texts">
-							<div class="">
-								<div class="year">
-									<div class="">
-										
-										<div>
-											<span class="">
-												<input name="" class="" type="text" maxlength="6" disabled="disabled" placeholder="Ï£ºÎØºÎ≤àÌò∏ ÏïûÏûêÎ¶¨"/>
-											</span>
-											<span>-</span>
-											<span>
-												<input name="" class="" type="text" maxlength="7" disabled="disabled" placeholder="Ï£ºÎØºÎ≤àÌò∏ Îí∑ÏûêÎ¶¨"/>
-											</span>
-										</div>
-									</div>
-								</div>
-								<p></p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="">
-					<div class="">
-						<input name="gender" class="" type="radio" value="male"/>
-						<label>ÎÇ®Ïûê</label>
-					</div>
-					<div class="">
-						<input name="gender" class="" type="radio" value="female"/>
-						<label>Ïó¨Ïûê</label>
-					</div>
-					<p></p>
-				</div>
-				<p class="" style="display: none;">ÌïÑÏàòÏ†ïÎ≥¥ÏûÖÎãàÎã§.</p>
-				<div class="">
-					<div class="">
-						<div class="">
-							<div class="mypage_info_texts">
-								
-								<div class="">
+					<div class=""> 
+						<select>
+							<option value="title" selected="selected">¡¶∏Ò</option>
+							<option value="title">µÓ∑œ ¿œ¿⁄</option>
+						</select>&nbsp;
+							<span >
+								<input class="" id="" type="text" value="" />
 									<span class="">
-										<select name="selectPhone" title="Ìú¥ÎåÄÌè∞ Ïïû 3ÏûêÎ¶¨" class="">
-											<option value="010">010</option>
-											<option value="011">011</option>
-											<option value="016">016</option>
-											<option value="017">017</option>
-											<option value="018">018</option>
-											<option value="019">019</option>
-										</select>
+										<input type = "button" id="towrite" value="∞Àªˆ" onclick="" style="color:white; background-color: #fc6c3f; width: 100px;">	
 									</span>
-									<span class="num">
-										<input name="inputPhone" class="" type="tel" maxlength="8" placeholder="Ìú¥ÎåÄÌè∞ Î≤àÌò∏ (Ïà´ÏûêÎßå)"/>
+									<span class="write">
+										<input type = "button" id="towrite" value="±€æ≤±‚" onclick="location.href='ask_write.jsp'" style="color:white; background-color: #fc6c3f; width: 100px;">
 									</span>
-								</div>
-							</div>
-							<p class="" style="display: none;"></p>
-						</div>
-						<div class="mypage_info_texts">
-							<div class="">
-								<div class="">
-									<div class="">
-										
-									</div>
-									<span class="">
-										<input name="" class="" type="text" placeholder="Ïù¥Î©îÏùº"/>
-									</span>
-									<span class="">@</span>
-									<span class="">
-										<input name="" class="" type="text" placeholder="ÏßÅÏ†ëÏûÖÎ†•"/>
-									</span>
-									<select name="selectEmail" title="" class="">
-										<option value="naver.com">naver.com</option>
-										<option value="hanmail.net">hanmail.net</option>
-										<option value="nate.com">nate.com</option>
-										<option value="google.com">google.com</option>
-									</select>
-									
-								</div>
-							</div>
-						</div>
-						<div class="mypage_info_texts">
-							<div class="">
-								
-								<div class="">
-									<input name="inputHeight" class="" type="text" maxlength="3" placeholder="ÌÇ§(cm)"/>
-								</div>
-							</div>
-						</div>
-						<div class="mypage_info_texts">
-							<div class="">
-								
-								<div class="">
-									<input name="inputWeight" class="" type="text" maxlength="3" placeholder="Î™∏Î¨¥Í≤å(kg)"/>
-								</div>
-							</div>
-						</div>
-						<p></p>
-						<div>
-							<input type="button" value="ÏàòÏ†ï" onclick="location.href='mypage_main.html'" style="margin-right: 100px; width: 50px"/>
-							<input type="button" value="ÏàòÏ†ï Ï∑®ÏÜå" onclick="location.href='mypage_main.html'"/>
-						</div>
+							</span>
 					</div>
 				</div>
-			</fieldset>
-		</div>
+			</div>
+		</fieldset>
+		<p></p>
 	</div>
-	<!-- information_update area end -->
-	
+		<div>
+			<table id ="table_boardlist" border="1" style="width: 800px; height: 100px; text-align: center;margin-left: auto; margin-right: auto;">
+				<tr style="font-weight: bold;">
+					<td scope="col">No</td>
+					<td scope="col">¡¶∏Ò</td>
+					<td scope="col">µÓ∑œ¿œ¿⁄</td>
+					<td scope="col">¥‰∫ØªÛ≈¬</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td><a href="ask_title.jsp">¡¶∏Ò¿Ã πª±Ó</a></td>
+					<td>2020-01-14</td>
+					<td>¥‰∫Ø ¥Î±‚¡ﬂ</td>
+				</tr>
+			</table>
+		</div>
+			<div>                    
+				<div class="pagination-area d-sm-flex mt-15" style="width: 300px; margin-left: auto; margin-right: auto;">
+                        <nav aria-label="#">
+                            <ul class="pagination">
+                                <li class="page-item active">
+                                    <a class="page-link" href="#">1 <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">Next <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                                </li>
+                            </ul>
+                        </nav>
+            	 </div>
+             </div>
+	</div>
+	<p></p>
+	<!-- 1:1 ask area end -->
     
+    
+    <!-- ****** Instagram Area Start ****** -->
+    <div class="instargram_area owl-carousel section_padding_100_0 clearfix" id="portfolio">
+
+        <!-- Instagram Item -->
+        <div class="instagram_gallery_item">
+            <!-- Instagram Thumb -->
+            <img src="img/instagram-img/1.jpg" alt="">
+            <!-- Hover -->
+            <div class="hover_overlay">
+                <div class="yummy-table">
+                    <div class="yummy-table-cell">
+                        <div class="follow-me text-center">
+                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i> Follow me</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Instagram Item -->
+        <div class="instagram_gallery_item">
+            <!-- Instagram Thumb -->
+            <img src="img/instagram-img/2.jpg" alt="">
+            <!-- Hover -->
+            <div class="hover_overlay">
+                <div class="yummy-table">
+                    <div class="yummy-table-cell">
+                        <div class="follow-me text-center">
+                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i> Follow me</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Instagram Item -->
+        <div class="instagram_gallery_item">
+            <!-- Instagram Thumb -->
+            <img src="img/instagram-img/3.jpg" alt="">
+            <!-- Hover -->
+            <div class="hover_overlay">
+                <div class="yummy-table">
+                    <div class="yummy-table-cell">
+                        <div class="follow-me text-center">
+                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i> Follow me</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Instagram Item -->
+        <div class="instagram_gallery_item">
+            <!-- Instagram Thumb -->
+            <img src="img/instagram-img/4.jpg" alt="">
+            <!-- Hover -->
+            <div class="hover_overlay">
+                <div class="yummy-table">
+                    <div class="yummy-table-cell">
+                        <div class="follow-me text-center">
+                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i> Follow me</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Instagram Item -->
+        <div class="instagram_gallery_item">
+            <!-- Instagram Thumb -->
+            <img src="img/instagram-img/5.jpg" alt="">
+            <!-- Hover -->
+            <div class="hover_overlay">
+                <div class="yummy-table">
+                    <div class="yummy-table-cell">
+                        <div class="follow-me text-center">
+                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i> Follow me</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Instagram Item -->
+        <div class="instagram_gallery_item">
+            <!-- Instagram Thumb -->
+            <img src="img/instagram-img/6.jpg" alt="">
+            <!-- Hover -->
+            <div class="hover_overlay">
+                <div class="yummy-table">
+                    <div class="yummy-table-cell">
+                        <div class="follow-me text-center">
+                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i> Follow me</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Instagram Item -->
+        <div class="instagram_gallery_item">
+            <!-- Instagram Thumb -->
+            <img src="img/instagram-img/1.jpg" alt="">
+            <!-- Hover -->
+            <div class="hover_overlay">
+                <div class="yummy-table">
+                    <div class="yummy-table-cell">
+                        <div class="follow-me text-center">
+                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i> Follow me</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Instagram Item -->
+        <div class="instagram_gallery_item">
+            <!-- Instagram Thumb -->
+            <img src="img/instagram-img/2.jpg" alt="">
+            <!-- Hover -->
+            <div class="hover_overlay">
+                <div class="yummy-table">
+                    <div class="yummy-table-cell">
+                        <div class="follow-me text-center">
+                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i> Follow me</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- ****** Our Creative Portfolio Area End ****** -->
 
     <!-- ****** Footer Social Icon Area Start ****** -->
     <div class="social_icon_area clearfix">
@@ -376,7 +428,7 @@
                                         <a class="nav-link" href="#">RESTAURANT</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">MY PAGE</a>
+                                        <a class="nav-link" href="mypage_main.jsp">MY PAGE</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="#">MANAGE</a>
